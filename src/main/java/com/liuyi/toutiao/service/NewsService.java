@@ -13,7 +13,7 @@ public class NewsService {
     @Resource
     public NewsDAO newsDAO;
 
-    public List<News> selectByUserIdAndOffset(int id, int offset, int limit) {
-        return newsDAO.selectByUserIdAndOffset(id, offset, limit);
+    public List<News> getLatestNews(int userId, int offset, int limit) {
+        return newsDAO.selectByUserIdAndOffset(userId, offset, limit);
     }
 }

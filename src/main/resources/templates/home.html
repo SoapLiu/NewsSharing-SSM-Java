@@ -12,6 +12,47 @@
             </h3>
 
             <div class="posts">
+                <!--<tr th:each="vo : ${vos}">-->
+                    <!--<td th:text="${vo.get('user').name}">user</td>-->
+                <!--</tr>-->
+                <div class="post" th:each="vo : ${vos}">
+                    <div class="votebar">
+                        <button class="click-like up" aria-pressed="false" title="赞同">
+                            <i class="vote-arrow"></i>
+                            <span class="count" th:text="${vo.get('news').likeCount}"></span>
+                        </button>
+                        <button class="click-dislike down" aria-pressed="true" title="反对">
+                            <i class="vote-arrow"></i>
+                        </button>
+                    </div>
+                    <div class="content">
+                        <div>
+                            <!--<img class="content-img" th:src="@{${vo.get('news').image}}" alt="" />-->
+                            <img th:src="@{/static/images/img/default.png}" alt="" />
+                        </div>
+                        <div class="content-main">
+                            <h3 class="title">
+                                <a target="_blank" rel="external nofollow"
+                                   th:href="@{'/news/'+${vo.get('news').id}}" th:text="${vo.get('news').title}"></a>
+                            </h3>
+                            <div class="meta" th:text="${vo.get('news').link}">
+                                <span>
+                                    <i class="fa icon-comment" th:text="${vo.get('news')commentCount}">11</i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-info">
+                        <div class="user-avatar">
+                            <a th:href="@{'/user/'+${vo.get('user').id}+'/'}"><img width="32" class="img-circle"
+                            th:src="@{/../static/images/img/default.png}" /></a>
+                            <!--th:src="@{${vo.get('user').headUrl}}" /></a>-->
+                        </div>
+                    </div>
+                    <div class="subject-name">
+                        来自 <a th:href="@{'/user/'+${vo.get('user'}.id+'/'}" th:text="${vo.get('user').name}"></a>
+                    </div>
+                </div>
             </div>
 
         </div>
