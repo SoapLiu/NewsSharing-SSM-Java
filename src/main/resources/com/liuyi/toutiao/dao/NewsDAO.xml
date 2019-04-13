@@ -4,9 +4,9 @@
 <mapper namespace="com.liuyi.toutiao.dao.NewsDAO">
     <sql id="table">news</sql>
     <sql id="selectFields">id, title, link, image, like_count, comment_count, created_datem, user_id</sql>
-    <select id="selectByUserIdAndOffset" resultType="com.liuyi.model.News">
+    <select id="selectByUserIdAndOffset" resultType="com.liuyi.toutiao.model.News">
         SELECT
-        <include refid="slectFields" />
+        <include refid="selectFields" />
         FROM
         <include refid="table" />
 

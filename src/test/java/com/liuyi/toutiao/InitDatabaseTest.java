@@ -28,9 +28,9 @@ public class InitDatabaseTest {
     @Test
     public void contextLoads() {
         Random random = new Random();
-        for(int i = 0; i < 9; i++) {
+        for(int i = 0; i < 19; i++) {
             User user = new User();
-            user.setHeadUrl(String.format("liuyi.cool/head/%dt.png", random.nextInt(1000)));
+            user.setHeadUrl("/static/images/default.png");
             user.setName(String.format("USER%d", i));
             user.setPassword("");
             user.setSalt("");
@@ -45,7 +45,7 @@ public class InitDatabaseTest {
             news.setUserId(i+1);
             news.setTitle(String.format("Title{%d}", i));
             news.setLink(String.format("http://liuyi.cool/%d.html", i));
-            news.setImage(String.format("http://liuyi.cool/%d.html", i));
+            news.setImage(String.format("/static/images/default.png", i));
             newsDAO.addNews(news);
 
         }
