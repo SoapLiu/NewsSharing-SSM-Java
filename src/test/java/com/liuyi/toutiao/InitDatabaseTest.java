@@ -30,7 +30,7 @@ public class InitDatabaseTest {
         Random random = new Random();
         for(int i = 0; i < 19; i++) {
             User user = new User();
-            user.setHeadUrl("/static/images/default.png");
+            user.setHeadUrl("/images/img/default.png");
             user.setName(String.format("USER%d", i));
             user.setPassword("");
             user.setSalt("");
@@ -45,7 +45,7 @@ public class InitDatabaseTest {
             news.setUserId(i+1);
             news.setTitle(String.format("Title{%d}", i));
             news.setLink(String.format("http://liuyi.cool/%d.html", i));
-            news.setImage(String.format("/static/images/default.png", i));
+            news.setImage(String.format("/images/img/news.jpeg", i));
             newsDAO.addNews(news);
 
         }

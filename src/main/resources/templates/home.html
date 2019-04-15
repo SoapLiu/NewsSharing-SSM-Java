@@ -10,7 +10,6 @@
                 <i class="fa icon-calendar"></i>
                 <span>头条资讯</span>
             </h3>
-
             <div class="posts">
                 <!--<tr th:each="vo : ${vos}">-->
                     <!--<td th:text="${vo.get('user').name}">user</td>-->
@@ -27,8 +26,7 @@
                     </div>
                     <div class="content">
                         <div>
-                            <!--<img class="content-img" th:src="@{${vo.get('news').image}}" alt="" />-->
-                            <img th:src="@{/static/images/img/default.png}" alt="" />
+                            <img class="content-img" th:src="@{${vo.get('news').image}}" alt="" />
                         </div>
                         <div class="content-main">
                             <h3 class="title">
@@ -45,8 +43,7 @@
                     <div class="user-info">
                         <div class="user-avatar">
                             <a th:href="@{'/user/'+${vo.get('user').id}+'/'}"><img width="32" class="img-circle"
-                            th:src="@{/../static/images/img/default.png}" /></a>
-                            <!--th:src="@{${vo.get('user').headUrl}}" /></a>-->
+                            th:src="@{${vo.get('user').headUrl}}" /></a>
                         </div>
                     </div>
                     <div class="subject-name">
