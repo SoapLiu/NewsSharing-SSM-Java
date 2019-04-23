@@ -4,14 +4,16 @@ import com.liuyi.toutiao.model.News;
 import com.liuyi.toutiao.model.ViewObject;
 import com.liuyi.toutiao.service.NewsService;
 import com.liuyi.toutiao.service.UserService;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import javax.servlet.http.HttpSession;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 @Controller
@@ -23,16 +25,31 @@ public class HomeController {
 
     @RequestMapping(path = {"/", "home"}, method = {RequestMethod.GET, RequestMethod.POST})
     public String index(Model model) {
-        List<News> newsList = newsService.getLatestNews(0, 0, 10);
-        List<ViewObject> vos = new ArrayList<>();
+        List<News> newsList = newsService.getLatestNews(0, 0, 20);
+        List<List<ViewObject>> voss = new ArrayList<>();
+        List<ViewObject> newsSameDay = new ArrayList<>();
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+        Date createdDate = new Date();
+        createdDate.setTime(0L);
+        String createdDay = formatter.format(createdDate);
+        String initDay = createdDay;
+
         for(News news : newsList) {
+            String newsDay = formatter.format(news.getCreatedDate());
+            if(!newsDay.equals(createdDay)) {
+                if(!createdDay.equals(initDay)) {
+                    voss.add(newsSameDay);
+                }
+                newsSameDay = new ArrayList<>();
+                createdDay = newsDay;
+            }
             ViewObject vo = new ViewObject();
             vo.set("news", news);
             vo.set("user", userService.getUser(news.getUserId()));
-            vos.add(vo);
+            newsSameDay.add(vo);
+            if(newsList.indexOf(news) == newsList.size()-1) voss.add(newsSameDay);
         }
-
-        model.addAttribute("vos", vos);
+        model.addAttribute("voss", voss);
         return "home";
     }
 }
