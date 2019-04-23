@@ -6,51 +6,54 @@
 <div id="main">
     <div class="container" id="daily">
         <div class="jscroll-inner">
-            <h3 class="date">
-                <i class="fa icon-calendar"></i>
-                <span>头条资讯</span>
-            </h3>
-            <div class="posts">
-                <!--<tr th:each="vo : ${vos}">-->
-                    <!--<td th:text="${vo.get('user').name}">user</td>-->
-                <!--</tr>-->
-                <div class="post" th:each="vo : ${vos}">
-                    <div class="votebar">
-                        <button class="click-like up" aria-pressed="false" title="赞同">
-                            <i class="vote-arrow"></i>
-                            <span class="count" th:text="${vo.get('news').likeCount}"></span>
-                        </button>
-                        <button class="click-dislike down" aria-pressed="true" title="反对">
-                            <i class="vote-arrow"></i>
-                        </button>
-                    </div>
-                    <div class="content">
-                        <div>
-                            <img class="content-img" th:src="@{${vo.get('news').image}}" alt="" />
+
+            <div class="daily" th:each="vo : ${vos}">
+
+                <h3 class="date" th:with="formatNewsDate=${#dates.format(vo.get('news').createdDate, 'yyyy-MM-dd')}">
+                    <i class="fa icon-calendar"></i>
+                    <span>头条资讯</span>
+                    <small th:text="${formatNewsDate}"></small>
+                </h3>
+                <div class="posts">
+                    <div class="post">
+                        <div class="votebar">
+                            <button class="click-like up" aria-pressed="false" title="赞同">
+                                <i class="vote-arrow"></i>
+                                <span class="count" th:text="${vo.get('news').likeCount}"></span>
+                            </button>
+                            <button class="click-dislike down" aria-pressed="true" title="反对">
+                                <i class="vote-arrow"></i>
+                            </button>
                         </div>
-                        <div class="content-main">
-                            <h3 class="title">
-                                <a target="_blank" rel="external nofollow"
-                                   th:href="@{'/news/'+${vo.get('news').id}}" th:text="${vo.get('news').title}"></a>
-                            </h3>
-                            <div class="meta" th:text="${vo.get('news').link}">
-                                <span>
-                                    <i class="fa icon-comment" th:text="${vo.get('news')commentCount}">11</i>
-                                </span>
+                        <div class="content">
+                            <div>
+                                <img class="content-img" th:src="@{${vo.get('news').image}}" alt="" />
+                            </div>
+                            <div class="content-main">
+                                <h3 class="title">
+                                    <a target="_blank" rel="external nofollow"
+                                       th:href="@{'/news/'+${vo.get('news').id}}" th:text="${vo.get('news').title}"></a>
+                                </h3>
+                                <div class="meta">
+                                    <span th:text="${vo.get('news').link}"></span>
+                                    <span>
+                                        <i class="fa icon-comment" th:text="${vo.get('news').commentCount}"></i>
+                                    </span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="user-info">
-                        <div class="user-avatar">
-                            <a th:href="@{'/user/'+${vo.get('user').id}+'/'}"><img width="32" class="img-circle"
-                            th:src="@{${vo.get('user').headUrl}}" /></a>
+                        <div class="user-info">
+                            <div class="user-avatar">
+                                <a th:href="@{'/user/'+${vo.get('user').id}+'/'}"><img width="32" class="img-circle" th:src="@{${vo.get('user').headUrl}}" /></a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="subject-name">
-                        来自 <a th:href="@{'/user/'+${vo.get('user'}.id+'/'}" th:text="${vo.get('user').name}"></a>
+                        <div class="subject-name">
+                            来自 <a th:href="@{'/user/'+${vo.get('user'}.id+'/'}" th:text="${vo.get('user').name}"></a>
+                        </div>
                     </div>
                 </div>
             </div>
+
 
         </div>
     </div>
