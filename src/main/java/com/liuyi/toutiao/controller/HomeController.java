@@ -8,6 +8,7 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -25,7 +26,18 @@ public class HomeController {
 
     @RequestMapping(path = {"/", "home"}, method = {RequestMethod.GET, RequestMethod.POST})
     public String index(Model model) {
-        List<News> newsList = newsService.getLatestNews(0, 0, 20);
+        model.addAttribute("voss", getNews(0, 0, 20));
+        return "home";
+    }
+
+    @RequestMapping(path = {"/user/{userId}"}, method = {RequestMethod.GET, RequestMethod.POST})
+    public String userIndex(Model model, @PathVariable("userId") int userId) {
+        model.addAttribute("voss", getNews(userId, 0, 20));
+        return "home";
+    }
+
+    private List<List<ViewObject>> getNews(int userId, int offset, int limit) {
+        List<News> newsList = newsService.getLatestNews(userId, offset, limit);
         List<List<ViewObject>> voss = new ArrayList<>();
         List<ViewObject> newsSameDay = new ArrayList<>();
         SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
@@ -49,7 +61,6 @@ public class HomeController {
             newsSameDay.add(vo);
             if(newsList.indexOf(news) == newsList.size()-1) voss.add(newsSameDay);
         }
-        model.addAttribute("voss", voss);
-        return "home";
+        return voss;
     }
 }
