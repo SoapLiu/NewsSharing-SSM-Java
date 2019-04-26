@@ -1,7 +1,9 @@
 package com.liuyi.toutiao;
 
+import com.liuyi.toutiao.dao.LoginTicketDAO;
 import com.liuyi.toutiao.dao.NewsDAO;
 import com.liuyi.toutiao.dao.UserDAO;
+import com.liuyi.toutiao.model.LoginTicket;
 import com.liuyi.toutiao.model.News;
 import com.liuyi.toutiao.model.User;
 import org.junit.Test;
@@ -25,6 +27,9 @@ public class InitDatabaseTest {
     @Resource
     NewsDAO newsDAO;
 
+    @Resource
+    LoginTicketDAO loginTicketDAO;
+
     @Test
     public void contextLoads() {
         Random random = new Random();
@@ -47,6 +52,15 @@ public class InitDatabaseTest {
             news.setLink(String.format("http://liuyi.cool/%d.html", i));
             news.setImage(String.format("/images/img/news.jpeg", i));
             newsDAO.addNews(news);
+
+            LoginTicket loginTicket = new LoginTicket();
+            loginTicket.setUserId(i+1);
+            loginTicket.setStatus(0);
+            loginTicket.setExpired(date);
+            loginTicket.setTicket(String.format("TICKET%d", i));
+            loginTicketDAO.addTicket(loginTicket);
+
+            loginTicketDAO.updateStatus(loginTicket.getTicket(), 2);
 
         }
     }

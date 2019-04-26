@@ -24,3 +24,13 @@ CREATE TABLE `toutiao`.`news` (
   `user_id` INT(11) NOT NULL,
   PRIMARY KEY (`id`)
   )ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `login_ticket`;
+CREATE TABLE `toutiao`.`login_ticket` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) NOT NULL,
+  `ticket` varchar(45) COLLATE utf8_bin NOT NULL,
+  `expired` datetime NOT NULL,
+  `status` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
