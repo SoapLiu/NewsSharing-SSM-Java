@@ -20,7 +20,7 @@ public class LoginController {
     @Autowired
     UserService userService;
 
-    @RequestMapping(path = {"/register/"}, method = {RequestMethod.GET, RequestMethod.POST})
+    @RequestMapping(path = {"/user/register"}, method = {RequestMethod.GET, RequestMethod.POST})
     @ResponseBody
     public String register(Model model, @RequestParam("username") String username,
                            @RequestParam("password") String password,
@@ -38,8 +38,8 @@ public class LoginController {
         }
     }
 
-    @RequestMapping(path = {"/login/"}, method = {RequestMethod.GET, RequestMethod.POST})
-//    @ResponseBody
+    @RequestMapping(path = {"/user/login"}, method = {RequestMethod.GET, RequestMethod.POST})
+    @ResponseBody
     public String login(Model model, @RequestParam("username") String username,
                         @RequestParam("password") String password,
                         @RequestParam(value = "remember", defaultValue = "0") int rememberme,
@@ -53,8 +53,8 @@ public class LoginController {
                     cookie.setMaxAge(24 * 60 * 60 * 5);
                 }
                 response.addCookie(cookie);
-//                return ToutiaoUtil.getJSONString(0, "登录成功");
-                return "redirect:/";
+                return ToutiaoUtil.getJSONString(0, "登录成功");
+//                return "redirect:/";
             } else {
                 return ToutiaoUtil.getJSONString(1, map);
             }
@@ -64,10 +64,16 @@ public class LoginController {
         }
     }
 
-    @RequestMapping(path = {"/logout"}, method = {RequestMethod.GET})
+    @RequestMapping(path = {"/user/logout"}, method = {RequestMethod.GET, RequestMethod.POST})
+    @ResponseBody
     public String logout(@CookieValue("ticket") String ticket) {
-        userService.logout(ticket);
-        return "redirect:/";
+        try {
+            userService.logout(ticket);
+            return ToutiaoUtil.getJSONString(0, "登出成功");
+        } catch (Exception e) {
+            log.error("登出失败" + e.getMessage());
+            return ToutiaoUtil.getJSONString(1, "登出失败");
+        }
     }
 
 }

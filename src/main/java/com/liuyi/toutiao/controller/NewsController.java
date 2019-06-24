@@ -42,7 +42,7 @@ public class NewsController {
         }
     }
 
-    @RequestMapping(path = {"/uploadImage/"}, method = {RequestMethod.POST})
+    @RequestMapping(path = {"/upload/newsImage"}, method = {RequestMethod.POST})
     @ResponseBody
     public String uploadImage(@RequestParam("file") MultipartFile file) {
         try {
@@ -57,11 +57,11 @@ public class NewsController {
         }
     }
 
-    @RequestMapping(path = {"/user/addNews/"}, method = {RequestMethod.POST})
+    @RequestMapping(path = {"/news/create/"}, method = {RequestMethod.POST})
     @ResponseBody
-    public String addNews(@RequestParam("image") String image,
+    public String addNews(@RequestParam("imageUrl") String image,
                           @RequestParam("title") String title,
-                          @RequestParam("link") String link) {
+                          @RequestParam("content") String link) {
         try {
             News news = new News();
             if(hostHolder.getUser() != null) {
