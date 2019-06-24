@@ -51,6 +51,7 @@ public class UserService {
         user.setPassword(MD5Util.MD5EncodeUtf8(password, user.getSalt()));
         userDAO.addUser(user);
 
+        map.put("ticket", addLoginTicket(user.getId()));
         return map;
 
     }
@@ -77,10 +78,12 @@ public class UserService {
         }
 
         //下发ticket给用户
-        String ticket = addLoginTicket(user.getId());
-        map.put("ticket", ticket);
+        map.put("ticket", addLoginTicket(user.getId()));
         return map;
+    }
 
+    public void logout(String ticket) {
+        loginTicketDAO.updateStatus(ticket, 1);
     }
 
     private String addLoginTicket(int userId) {

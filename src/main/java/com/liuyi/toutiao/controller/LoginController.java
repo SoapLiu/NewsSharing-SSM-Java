@@ -1,7 +1,7 @@
 package com.liuyi.toutiao.controller;
 
 import com.liuyi.toutiao.service.UserService;
-import com.liuyi.toutiao.util.JSONUtil;
+import com.liuyi.toutiao.util.ToutiaoUtil;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -27,14 +27,14 @@ public class LoginController {
                            @RequestParam(value = "remember", defaultValue = "0") int rememberme) {
         try {
             Map<String, Object> map = userService.register(username, password);
-            if(map.isEmpty()) {
-                return JSONUtil.getJSONString(0, "注册成功");
+            if(map.containsKey("ticket")) {
+                return ToutiaoUtil.getJSONString(0, "注册成功");
             } else {
-                return JSONUtil.getJSONString(1, map);
+                return ToutiaoUtil.getJSONString(1, map);
             }
         } catch (Exception e) {
             log.error("注册异常" + e.getMessage());
-            return JSONUtil.getJSONString(1, "注册异常");
+            return ToutiaoUtil.getJSONString(1, "注册异常");
         }
     }
 
@@ -53,15 +53,21 @@ public class LoginController {
                     cookie.setMaxAge(24 * 60 * 60 * 5);
                 }
                 response.addCookie(cookie);
-//                return JSONUtil.getJSONString(0, "登录成功");
+//                return ToutiaoUtil.getJSONString(0, "登录成功");
                 return "redirect:/";
             } else {
-                return JSONUtil.getJSONString(1, map);
+                return ToutiaoUtil.getJSONString(1, map);
             }
         } catch (Exception e) {
             log.error("登录异常" + e.getMessage());
-            return JSONUtil.getJSONString(1, "登录异常");
+            return ToutiaoUtil.getJSONString(1, "登录异常");
         }
+    }
+
+    @RequestMapping(path = {"/logout"}, method = {RequestMethod.GET})
+    public String logout(@CookieValue("ticket") String ticket) {
+        userService.logout(ticket);
+        return "redirect:/";
     }
 
 }

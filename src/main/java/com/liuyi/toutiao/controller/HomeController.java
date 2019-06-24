@@ -11,6 +11,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -19,14 +20,16 @@ import java.util.List;
 
 @Controller
 public class HomeController {
+
     @Autowired
     UserService userService;
     @Autowired
     NewsService newsService;
 
     @RequestMapping(path = {"/", "home"}, method = {RequestMethod.GET, RequestMethod.POST})
-    public String index(Model model) {
+    public String index(Model model, @RequestParam(value = "pop", defaultValue = "0") int pop) {
         model.addAttribute("voss", getNews(0, 0, 20));
+        model.addAttribute("pop", pop);
         return "home";
     }
 

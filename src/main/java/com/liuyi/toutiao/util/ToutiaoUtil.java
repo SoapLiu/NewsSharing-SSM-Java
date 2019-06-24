@@ -4,7 +4,12 @@ import com.alibaba.fastjson.JSONObject;
 
 import java.util.Map;
 
-public class JSONUtil {
+public class ToutiaoUtil {
+
+    public static String[] IMAGE_FILE_EXT = new String[] {"jpg", "png", "bmp", "jpeg"};
+
+    public static String IMAGE_DIR = "UploadImages/";
+    public static String TOUTIAO_DOMAIN= "http://127.0.0.1:8080/";
 
     public static String getJSONString(int code) {
         JSONObject json = new JSONObject();
@@ -27,4 +32,12 @@ public class JSONUtil {
         }
         return json.toJSONString();
     }
+
+    public static boolean isFileAllowed(String fileExt) {
+        for(String ext : IMAGE_FILE_EXT) {
+            if(fileExt.equals(ext)) return true;
+        }
+        return false;
+    }
+
 }
