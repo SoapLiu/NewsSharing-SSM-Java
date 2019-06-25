@@ -5,23 +5,17 @@
 <div id="main">
     <div class="container">
         <div class="post detail">
-            <!--<div th:class="votebar" th:switch="${news.likeCount}">-->
-                <!--<button th:case="${news.likeCount} gt 0" class="click-like up pressed" th:data-id="${news.id}" th:title="赞同">-->
-                    <!--<i th:class="vote-arrow"></i>-->
-                    <!--<span th:class="count" th:text="${news.likeCount}"></span>-->
-                <!--</button>-->
-                <!--<button th:case="${news.likeCount} eq 0" class="click-like up pressed" th:data-id="${news.id}" th:title="赞同">-->
-                    <!--<i th:class="vote-arrow"></i>-->
-                    <!--<span th:class="count" th:text="${news.likeCount}"></span>-->
-                <!--</button>-->
-                <!--<button th:case="${news.likeCount} lt 0" class="click-dislike down pressed" th:data-id="${news.id}" th:title="反对">-->
-                    <!--<i th:class="vote-arrow"></i>-->
-                <!--</button>-->
-            <!--</div>-->
+            <div class="votebar">
+                <button class="click-like up" aria-pressed="false" title="赞同">
+                    <i class="vote-arrow"></i>
+                    <span class="count" th:text="${news.likeCount}"></span>
+                </button>
+                <button class="click-dislike down" aria-pressed="true" title="反对">
+                    <i class="vote-arrow"></i>
+                </button>
+            </div>
             <div class="content">
-                <div th:class="content-img">
-                    <img th:src="${news.image}" th:alt="''" />
-                </div>
+                <img th:class="content-img" th:src="${news.image}" alt="" />
                 <div th:class="content-main">
                     <h3 th:class="title">
                         <a th:target="_blank" rel="external nofollow" th:href="${news.link}" th:text="${news.title}" ></a>
