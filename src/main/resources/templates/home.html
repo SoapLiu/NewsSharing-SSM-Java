@@ -44,7 +44,7 @@
                             </div>
                             <div class="user-info">
                                 <div class="user-avatar">
-                                    <a th:href="@{'/user/'+${vo.get('user').id}+'/'}"><img width="32" class="img-circle" th:src="@{${vo.get('user').headUrl}}" /></a>
+                                    <a th:href="@{'/user/'+${vo.get('user').id}+'/'}"><img th:width="32" th:class="img-circle" th:src="@{${vo.get('user').headUrl}}" /></a>
                                 </div>
                             </div>
                             <div class="subject-name">

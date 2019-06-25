@@ -3,14 +3,13 @@ package com.liuyi.toutiao.controller;
 import com.liuyi.toutiao.model.HostHolder;
 import com.liuyi.toutiao.model.News;
 import com.liuyi.toutiao.service.NewsService;
+import com.liuyi.toutiao.service.UserService;
 import com.liuyi.toutiao.util.ToutiaoUtil;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.util.StreamUtils;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.annotation.Resource;
@@ -26,6 +25,9 @@ public class NewsController {
 
     @Resource
     NewsService newsService;
+
+    @Resource
+    UserService userService;
 
     @Resource
     HostHolder hostHolder;
@@ -81,5 +83,16 @@ public class NewsController {
             log.error("添加资讯失败" + e.getMessage());
             return ToutiaoUtil.getJSONString(2, "添加资讯失败");
         }
+    }
+
+    @RequestMapping(path = {"/news/{newsId}"}, method = {RequestMethod.GET})
+    public String newsDetail(Model model, @PathVariable("newsId") int newsId) {
+        News news = newsService.getNewsById(newsId);
+        if(news != null) {
+            //评论
+        }
+        model.addAttribute("news", news);
+        model.addAttribute("owner", userService.getUser(news.getUserId()));
+        return "detail";
     }
 }

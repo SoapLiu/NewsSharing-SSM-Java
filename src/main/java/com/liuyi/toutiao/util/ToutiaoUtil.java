@@ -10,6 +10,7 @@ public class ToutiaoUtil {
 
     public static String IMAGE_DIR = "UploadImages/";
     public static String TOUTIAO_DOMAIN= "http://127.0.0.1:8080/";
+//    public static String TOUTIAO_DOMAIN= "http://liuyi.cool/";
 
     public static String getJSONString(int code) {
         JSONObject json = new JSONObject();
