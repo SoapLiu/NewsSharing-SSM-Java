@@ -38,9 +38,9 @@
         <div class="post-comment-form">
             <div th:switch="${user}!=null">
                 <div th:case="true">
-                    <span>评论 <span th:text="${news.commentCount}"></span></span>
+                    <span>评论 (<span th:text="${news.commentCount}"></span>)</span>
                     <form th:method="post" th:action="@{/addComment}">
-                        <input th:name="newsId" th:type="hidden" th:value="${news.id}"></input>
+                        <input th:name="newsId" th:charset="UTF-8" th:type="hidden" th:value="${news.id}"></input>
 
                         <div class="form-group text required comment_content">
                             <label class="text required sr-only">
@@ -63,22 +63,21 @@
             </div>
 
         </div>
-        <!--<div th:id="comments" th:class="comments">-->
-            <!--#foreach($commentvo in $comments)-->
-            <!--<div class="media">-->
-                <!--<a class="media-left" href="/user/$!{commentvo.user.id}">-->
-                    <!--<img src="$!{commentvo.user.headUrl}" />-->
-                <!--</a>-->
-                <!--<div class="media-body">-->
-                    <!--<h4 class="media-heading">-->
-                        <!--<small class="date">$date.format('yyyy-MM-dd HH:mm:ss', $!{commentvo.comment.createdDate})-->
-                        <!--</small>-->
-                    <!--</h4>-->
-                    <!--<div>$!{commentvo.comment.content}</div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--#end-->
-        <!--</div>-->
+
+
+        <div th:id="comments" th:class="comments">
+            <div th:class="media" th:each="comment : ${comments}">
+                <a th:class="media-left" th:href="@{'/user/'+${comment.get('user').id}}">
+                    <img th:src="@{${comment.get('user').headUrl}}" th:alt="''"/>
+                </a>
+                <div th:class="media-body">
+                    <h4 th:class="media-heading">
+                        <small th:class="date" th:text="${#dates.format(comment.get('comment').createdDate, 'yyyy-MM-dd HH:mm:ss')}"></small>
+                    </h4>
+                    <div th:text="${comment.get('comment').content}"></div>
+                </div>
+            </div>
+        </div>
     </div>
     <script type="text/javascript" th:inline="javascript">
         $(function () {

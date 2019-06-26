@@ -1,10 +1,7 @@
 package com.liuyi.toutiao.dao;
 
 import com.liuyi.toutiao.model.News;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Param;
-import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.*;
 
 import java.util.List;
 
@@ -24,5 +21,8 @@ public interface NewsDAO {
 
     @Select({"select ", SELECT_FIELDS, " from ", TABLE_NAME, " where id=#{newsId}"})
     News getNewsById(@Param("newsId") int newsId);
+
+    @Update({"update ", TABLE_NAME, " set comment_count=#{commentCount} where id=#{newsId}"})
+    int updateNewsCommentCount(@Param("commentCount") int commentCount, @Param("newsId") int newsId);
 
 }

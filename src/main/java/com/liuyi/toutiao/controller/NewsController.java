@@ -1,35 +1,43 @@
 package com.liuyi.toutiao.controller;
 
+import com.liuyi.toutiao.model.Comment;
 import com.liuyi.toutiao.model.HostHolder;
 import com.liuyi.toutiao.model.News;
+import com.liuyi.toutiao.model.ViewObject;
+import com.liuyi.toutiao.service.CommentService;
 import com.liuyi.toutiao.service.NewsService;
 import com.liuyi.toutiao.service.UserService;
 import com.liuyi.toutiao.util.ToutiaoUtil;
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.StreamUtils;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
-import javax.annotation.Resource;
 import javax.servlet.http.HttpServletResponse;
 import java.io.File;
 import java.io.FileInputStream;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 @Controller
 public class NewsController {
 
     private static final Logger log = Logger.getLogger(LoginController.class);
 
-    @Resource
+    @Autowired
     NewsService newsService;
 
-    @Resource
+    @Autowired
     UserService userService;
 
-    @Resource
+    @Autowired
+    CommentService commentService;
+
+    @Autowired
     HostHolder hostHolder;
 
     @RequestMapping(path = {"/image"}, method = {RequestMethod.GET})
@@ -89,10 +97,21 @@ public class NewsController {
     public String newsDetail(Model model, @PathVariable("newsId") int newsId) {
         News news = newsService.getNewsById(newsId);
         if(news != null) {
-            //评论
+            //评论 todo:分页显示评论
+            List<Comment> comments = commentService.selectCommentByEntity(0, newsId);
+            List<ViewObject> commentvo = new ArrayList<>();
+            for(Comment comment : comments) {
+                ViewObject vo = new ViewObject();
+                vo.set("user", userService.getUser(comment.getUserId()));
+                vo.set("comment", comment);
+                commentvo.add(vo);
+            }
+            model.addAttribute("comments", commentvo);
+
         }
         model.addAttribute("news", news);
         model.addAttribute("owner", userService.getUser(news.getUserId()));
         return "detail";
     }
+
 }

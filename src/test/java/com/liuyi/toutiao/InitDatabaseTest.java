@@ -1,18 +1,20 @@
 package com.liuyi.toutiao;
 
+import com.liuyi.toutiao.dao.CommentDAO;
 import com.liuyi.toutiao.dao.LoginTicketDAO;
 import com.liuyi.toutiao.dao.NewsDAO;
 import com.liuyi.toutiao.dao.UserDAO;
+import com.liuyi.toutiao.model.Comment;
 import com.liuyi.toutiao.model.LoginTicket;
 import com.liuyi.toutiao.model.News;
 import com.liuyi.toutiao.model.User;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.jdbc.Sql;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import javax.annotation.Resource;
 import java.util.Date;
 import java.util.Random;
 
@@ -21,14 +23,17 @@ import java.util.Random;
 @Sql("/init-schema.sql")
 public class InitDatabaseTest {
 
-    @Resource
+    @Autowired
     UserDAO userDAO;
 
-    @Resource
+    @Autowired
     NewsDAO newsDAO;
 
-    @Resource
+    @Autowired
     LoginTicketDAO loginTicketDAO;
+
+    @Autowired
+    CommentDAO commentDAO;
 
     @Test
     public void contextLoads() {
@@ -62,6 +67,16 @@ public class InitDatabaseTest {
 
             loginTicketDAO.updateStatus(loginTicket.getTicket(), 2);
 
+            Comment comment = new Comment();
+            comment.setContent("content test");
+            comment.setCreatedDate(new Date());
+            comment.setEntityId(i);
+            comment.setEntityType(0);   //0为news的评论
+            comment.setStatus(0);
+            comment.setUserId(i);
+            commentDAO.addComment(comment);
+
         }
     }
+
 }

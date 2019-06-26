@@ -6,14 +6,14 @@
 <div id="main">
     <div class="container" id="daily">
         <div class="jscroll-inner">
-            <div th:each="vos: ${voss}">
+            <div th:each="vos : ${voss}">
                 <div class="daily" th:each="vo : ${vos}">
                     <h3 class="date" th:with="formatNewsDate=${#dates.format(vo.get('news').createdDate, 'yyyy-MM-dd')}"
-                    th:if="${voStat.index} == 0">
-                    <i class="fa icon-calendar"></i>
-                    <span>头条资讯</span>
-                    <span th:text="${formatNewsDate}"></span>
-                </h3>
+                        th:if="${voStat.index} == 0">
+                        <i class="fa icon-calendar"></i>
+                        <span>头条资讯</span>
+                        <span th:text="${formatNewsDate}"></span>
+                    </h3>
                     <div class="posts">
                         <div class="post">
                             <div class="votebar">
@@ -52,7 +52,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </div>

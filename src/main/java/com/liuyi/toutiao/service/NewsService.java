@@ -48,4 +48,8 @@ public class NewsService {
         newsDAO.addNews(news);
     }
 
+    public void updateNewsCommentCount(int commentCount, int newsId) {
+        newsDAO.updateNewsCommentCount(commentCount, newsId);
+    }
+
 }
