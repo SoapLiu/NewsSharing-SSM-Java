@@ -26,7 +26,7 @@ import java.util.List;
 @Controller
 public class NewsController {
 
-    private static final Logger log = Logger.getLogger(LoginController.class);
+    private static final Logger log = Logger.getLogger(NewsController.class);
 
     @Autowired
     NewsService newsService;

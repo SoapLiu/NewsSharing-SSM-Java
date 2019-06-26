@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<div th:include="header :: header"></div>
+<div id="main">
+    <div th:class="container">
+        <ul th:class="letter-chatlist" th:each="mvo : ${messageVo}">
+            <li th:id="msg-item-4009580">
+                <a th:class="list-head" th:href="@{'/user/'+${mvo.get('messageReceiver').id}+'/'}">
+                <img th:alt="头像" th:src="@{${mvo.get('messageReceiver').headUrl}}" />
+                </a>
+                <div class="tooltip fade right in">
+                    <div class="tooltip-arrow"></div>
+                    <div class="tooltip-inner letter-chat clearfix">
+                        <div th:class="letter-info">
+                            <p class="letter-time" th:text="${#dates.format(mvo.get('message').createdDate, 'yyyy-MM-dd HH:mm:ss')}"></p>
+                            <a href="javascript:void(0);" th:id="del-link" th:name="4009580">删除</a>
+                        </div>
+                        <p th:class="chat-content" th:text="${mvo.get('message').content}">
+                        </p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div th:include="footer :: footer"></div>
+</html>

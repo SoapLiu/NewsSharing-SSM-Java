@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<div th:include="header :: header"></div>
+<div th:id="main">
+    <div th:class="container">
+        <ul th:class="letter-list" th:each="conversation : ${conversationVos}">
+            <li th:id="conversation-item-10005_622873">
+                <a th:class="letter-link"
+                   th:href="@{'/msg/detail?conversationId='+${conversation.get('conversation').conversationId}}"></a>
+                <div th:class="letter-info">
+                    <span th:class="l-time"
+                          th:text="${#dates.format(conversation.get('conversation').createdDate, 'yyyy-MM-dd HH:mm:ss')}"></span>
+                    <div th:class="l-operate-bar">
+                        <a href="javascript:void(0);" th:class="sns-action-del" th:data-id="10005_622873">
+                            删除
+                        </a>
+                        <a th:href="@{'/msg/detail?conversationId='+${conversation.get('conversation').conversationId}}">
+                            共<span th:text="${conversation.get('conversation').id}"></span>条会话
+                        </a>
+                    </div>
+                </div>
+                <div th:class="chat-headbox">
+                    <span th:class="msg-num" th:if="${conversation.get('unreadCount') gt 0}" th:text="${conversation.get('unreadCount')}"></span>
+                    <a th:class="list-head" th:href="@{'/user/'+${conversation.get('conversationReceiver').id}}">
+                        <img th:alt="头像" th:src="@{${conversation.get('conversationReceiver').headUrl}}" />
+                    </a>
+                </div>
+                <div th:class="letter-detail">
+                    <a th:title="${conversation.get('conversationReceiver').name}" class="letter-name level-color-1" th:text="${conversation.get('conversationReceiver').name}">
+                    </a>
+                    <p th:class="letter-brief">
+                        <a th:href="@{'/msg/detail?conversationId='+${conversation.get('conversation').conversationId}}" th:text="${conversation.get('conversation').content}">
+                        </a>
+                    </p>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+</div>
+<div th:include="footer :: footer"></div>
+</html>

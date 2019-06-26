@@ -24,7 +24,7 @@ public class CommentController {
     @Autowired
     private HostHolder hostHolder;
 
-    private static final Logger log = Logger.getLogger(LoginController.class);
+    private static final Logger log = Logger.getLogger(CommentController.class);
 
     @RequestMapping(path = {"/addComment"}, method = {RequestMethod.POST})
     public String addComment(@RequestParam("newsId") int newsId,
