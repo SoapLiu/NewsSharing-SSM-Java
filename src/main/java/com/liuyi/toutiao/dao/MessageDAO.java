@@ -2,7 +2,6 @@ package com.liuyi.toutiao.dao;
 
 import com.liuyi.toutiao.model.Message;
 import org.apache.ibatis.annotations.*;
-import sun.plugin2.message.Conversation;
 
 import java.util.List;
 
