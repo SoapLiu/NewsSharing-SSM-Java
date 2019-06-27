@@ -22,18 +22,21 @@ public interface MessageDAO {
                                         @Param("offset") int offset,
                                         @Param("limit") int limit);
 
-    @Select({"select count(id) as id, conversation_id, any_value(from_id) as from_id, any_value(to_id) as to_id," +
-            " any_value(content) as content, any_value(created_date) as created_date, any_value(has_read) as has_read " +
-            "from (select * from message where from_id=#{userId} or to_id=#{userId} order by id desc) as t" +
-            " group by conversation_id order by created_date desc limit #{offset}, #{limit}"})
+    @Select({"select t.id, ", INSERT_FIELD, " from ", TABLE_NAME,
+            " as m right join (select max(id) as maxid, count(id) as id from ", TABLE_NAME,
+            " group by conversation_id) as t on m.id=t.maxid order by t.maxid desc limit #{offset}, #{limit}"})
     List<Message> getConversationList(@Param("userId") int userId,
                                       @Param("offset") int offset,
                                       @Param("limit") int limit);
 
-    @Select({"select count(has_read) from ", TABLE_NAME, " where conversation_id=#{conversationId} and has_read=#{hasRead} and to_id=#{toId}"})
-    int getReadStatusCount(@Param("conversationId") String conversationId, @Param("hasRead") int hasRead, @Param("toId") int toId);
+    @Select({"select count(has_read) from ", TABLE_NAME,
+            " where conversation_id=#{conversationId} and has_read=#{hasRead} and to_id=#{toId}"})
+    int getReadStatusCount(@Param("conversationId") String conversationId,
+                           @Param("hasRead") int hasRead,
+                           @Param("toId") int toId);
 
     @Update({"update ", TABLE_NAME, " set has_read=#{readStatus} where conversation_id=#{conversationId}"})
-    void updateReadStatus(@Param("conversationId") String conversationId, @Param("readStatus") int readStatus);
+    void updateReadStatus(@Param("conversationId") String conversationId,
+                          @Param("readStatus") int readStatus);
 
 }

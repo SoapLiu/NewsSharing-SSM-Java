@@ -41,7 +41,6 @@
                     <span>评论 (<span th:text="${news.commentCount}"></span>)</span>
                     <form th:method="post" th:action="@{/addComment}">
                         <input th:name="newsId" th:charset="UTF-8" th:type="hidden" th:value="${news.id}"></input>
-
                         <div class="form-group text required comment_content">
                             <label class="text required sr-only">
                                 <abbr title="required">*</abbr> 评论</label>

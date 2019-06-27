@@ -31,7 +31,6 @@ public class CommentController {
                              @RequestParam("content") String content) {
 
         try {
-            News news = newsService.getNewsById(newsId);
             User user = hostHolder.getUser();
             Comment comment = new Comment();
             comment.setContent(content);

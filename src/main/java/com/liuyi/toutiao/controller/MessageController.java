@@ -31,7 +31,7 @@ public class MessageController {
     @Autowired
     HostHolder hostHolder;
 
-    @RequestMapping(path = {"/msg/addMessage"}, method = {RequestMethod.POST})
+    @RequestMapping(path = {"/msg/addMessage"}, method = {RequestMethod.POST, RequestMethod.GET})
     @ResponseBody
     public String addMessage(@RequestParam("fromId") int fromId,
                              @RequestParam("toId") int toId,
