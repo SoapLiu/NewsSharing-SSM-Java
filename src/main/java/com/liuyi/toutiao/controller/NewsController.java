@@ -1,10 +1,8 @@
 package com.liuyi.toutiao.controller;
 
-import com.liuyi.toutiao.model.Comment;
-import com.liuyi.toutiao.model.HostHolder;
-import com.liuyi.toutiao.model.News;
-import com.liuyi.toutiao.model.ViewObject;
+import com.liuyi.toutiao.model.*;
 import com.liuyi.toutiao.service.CommentService;
+import com.liuyi.toutiao.service.LikeService;
 import com.liuyi.toutiao.service.NewsService;
 import com.liuyi.toutiao.service.UserService;
 import com.liuyi.toutiao.util.ToutiaoUtil;
@@ -36,6 +34,9 @@ public class NewsController {
 
     @Autowired
     CommentService commentService;
+
+    @Autowired
+    LikeService likeService;
 
     @Autowired
     HostHolder hostHolder;
@@ -100,6 +101,13 @@ public class NewsController {
             //评论 todo:分页显示评论
             List<Comment> comments = commentService.selectCommentByEntity(0, newsId);
             List<ViewObject> commentvo = new ArrayList<>();
+            User currentUser = hostHolder.getUser();
+            ViewObject likeStatus = new ViewObject();
+            if(currentUser != null) {
+                likeStatus.set("like", likeService.getLikeStatus(currentUser.getId(), EntityType.NEWS, news.getId()));
+            } else {
+                likeStatus.set("like", 0);
+            }
             for(Comment comment : comments) {
                 ViewObject vo = new ViewObject();
                 vo.set("user", userService.getUser(comment.getUserId()));
@@ -107,6 +115,7 @@ public class NewsController {
                 commentvo.add(vo);
             }
             model.addAttribute("comments", commentvo);
+            model.addAttribute("likeStatus", likeStatus);
 
         }
         model.addAttribute("news", news);

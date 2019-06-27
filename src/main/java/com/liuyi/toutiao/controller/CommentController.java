@@ -36,11 +36,11 @@ public class CommentController {
             comment.setContent(content);
             comment.setCreatedDate(new Date());
             comment.setEntityId(newsId);
-            comment.setEntityType(EntityType.NEWS_COMMENT);   //0为news的评论
+            comment.setEntityType(EntityType.NEWS);   //0为news的评论
             comment.setStatus(0);
             comment.setUserId(user.getId());
             commentService.addComment(comment);
-            newsService.updateNewsCommentCount(commentService.getCommentCount(EntityType.NEWS_COMMENT, newsId), newsId);
+            newsService.updateNewsCommentCount(commentService.getCommentCount(EntityType.NEWS, newsId), newsId);
         } catch (Exception e) {
             log.error("增加评论失败" + e.getMessage());
         }

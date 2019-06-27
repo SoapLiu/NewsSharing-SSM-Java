@@ -17,11 +17,18 @@
                     <div class="posts">
                         <div class="post">
                             <div class="votebar">
-                                <button class="click-like up" aria-pressed="false" title="赞同">
-                                <i class="vote-arrow"></i>
-                                <span class="count" th:text="${vo.get('news').likeCount}"></span>
-                            </button>
-                                <button class="click-dislike down" aria-pressed="true" title="反对">
+                                <button class="click-like up pressed" th:if="${vo.get('like')} gt 0" th:attr="data-id=${vo.get('news').id}" title="赞同">
+                                    <i class="vote-arrow"></i>
+                                    <span class="count" th:text="${vo.get('news').likeCount}"></span>
+                                </button>
+                                <button class="click-like up" th:if="${vo.get('like')} le 0" th:attr="data-id=${vo.get('news').id}" title="赞同">
+                                    <i class="vote-arrow"></i>
+                                    <span class="count" th:text="${vo.get('news').likeCount}"></span>
+                                </button>
+                                <button class="click-dislike down pressed" th:if="${vo.get('like')} lt 0" th:attr="data-id=${vo.get('news').id}" title="反对">
+                                    <i class="vote-arrow"></i>
+                                </button>
+                                <button class="click-dislike down" th:if="${vo.get('like')} ge 0" th:attr="data-id=${vo.get('news').id}" title="反对">
                                     <i class="vote-arrow"></i>
                                 </button>
                             </div>

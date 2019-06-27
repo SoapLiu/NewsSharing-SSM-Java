@@ -6,14 +6,22 @@
     <div class="container">
         <div class="post detail">
             <div class="votebar">
-                <button class="click-like up" aria-pressed="false" title="赞同">
+                <button class="click-like up pressed" th:if="${likeStatus.get('like')} gt 0" th:attr="data-id=${news.id}" title="赞同">
                     <i class="vote-arrow"></i>
                     <span class="count" th:text="${news.likeCount}"></span>
                 </button>
-                <button class="click-dislike down" aria-pressed="true" title="反对">
+                <button class="click-like up" th:if="${likeStatus.get('like')} le 0" th:attr="data-id=${news.id}" title="赞同">
+                    <i class="vote-arrow"></i>
+                    <span class="count" th:text="${news.likeCount}"></span>
+                </button>
+                <button class="click-dislike down pressed" th:if="${likeStatus.get('like')} lt 0" th:attr="data-id=${news.id}" title="反对">
+                    <i class="vote-arrow"></i>
+                </button>
+                <button class="click-dislike down" th:if="${likeStatus.get('like')} ge 0" th:attr="data-id=${news.id}" title="反对">
                     <i class="vote-arrow"></i>
                 </button>
             </div>
+
             <div class="content">
                 <img th:class="content-img" th:src="${news.image}" alt="" />
                 <div th:class="content-main">

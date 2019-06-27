@@ -1,7 +1,7 @@
 package com.liuyi.toutiao.controller;
 
-import com.liuyi.toutiao.model.News;
-import com.liuyi.toutiao.model.ViewObject;
+import com.liuyi.toutiao.model.*;
+import com.liuyi.toutiao.service.LikeService;
 import com.liuyi.toutiao.service.NewsService;
 import com.liuyi.toutiao.service.UserService;
 import org.apache.log4j.Logger;
@@ -23,8 +23,15 @@ public class HomeController {
 
     @Autowired
     UserService userService;
+
     @Autowired
     NewsService newsService;
+
+    @Autowired
+    LikeService likeService;
+
+    @Autowired
+    HostHolder hostHolder;
 
     @RequestMapping(path = {"/", "home"}, method = {RequestMethod.GET, RequestMethod.POST})
     public String index(Model model, @RequestParam(value = "pop", defaultValue = "0") int pop) {
@@ -48,6 +55,7 @@ public class HomeController {
         createdDate.setTime(0L);
         String createdDay = formatter.format(createdDate);
         String initDay = createdDay;
+        User currentUser = hostHolder.getUser();
 
         for(News news : newsList) {
             String newsDay = formatter.format(news.getCreatedDate());
@@ -60,6 +68,11 @@ public class HomeController {
             }
             ViewObject vo = new ViewObject();
             vo.set("news", news);
+            if(currentUser != null) {
+                vo.set("like", likeService.getLikeStatus(currentUser.getId(), EntityType.NEWS, news.getId()));
+            } else {
+                vo.set("like", 0);
+            }
             vo.set("user", userService.getUser(news.getUserId()));
             newsSameDay.add(vo);
             if(newsList.indexOf(news) == newsList.size()-1) voss.add(newsSameDay);
