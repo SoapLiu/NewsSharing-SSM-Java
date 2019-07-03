@@ -79,6 +79,7 @@ public class UserService {
 
         //下发ticket给用户
         map.put("ticket", addLoginTicket(user.getId()));
+        map.put("userId", user.getId());
         return map;
     }
 

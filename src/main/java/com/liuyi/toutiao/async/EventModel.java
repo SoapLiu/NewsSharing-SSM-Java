@@ -79,7 +79,8 @@ public class EventModel {
         return exts.get(key);
     }
 
-    public void setExt(String key, String value) {
+    public EventModel setExt(String key, String value) {
         exts.put(key, value);
+        return this;
     }
 }

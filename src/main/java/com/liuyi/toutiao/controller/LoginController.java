@@ -1,5 +1,9 @@
 package com.liuyi.toutiao.controller;
 
+import com.liuyi.toutiao.async.EventModel;
+import com.liuyi.toutiao.async.EventProducer;
+import com.liuyi.toutiao.async.EventType;
+import com.liuyi.toutiao.model.EntityType;
 import com.liuyi.toutiao.service.UserService;
 import com.liuyi.toutiao.util.ToutiaoUtil;
 import org.apache.log4j.Logger;
@@ -19,6 +23,9 @@ public class LoginController {
 
     @Autowired
     UserService userService;
+
+    @Autowired
+    EventProducer eventProducer;
 
     @RequestMapping(path = {"/user/register"}, method = {RequestMethod.GET, RequestMethod.POST})
     @ResponseBody
@@ -53,6 +60,10 @@ public class LoginController {
                     cookie.setMaxAge(24 * 60 * 60 * 5);
                 }
                 response.addCookie(cookie);
+                eventProducer.fireEvent(new EventModel(EventType.LOGIN)
+                        .setActorId((int) map.get("userId"))
+                        .setExt("username", username)
+                        .setExt("to", "liuyi95@hotmail.com"));
                 return ToutiaoUtil.getJSONString(0, "登录成功");
 //                return "redirect:/";
             } else {
