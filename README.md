@@ -141,5 +141,5 @@ __项目结构__
 ------
 	1.安装必要条件中提到的运行环境；
 	2.将application.properties中的username与password更改为自己MySQL数据库的账号密码；
-	3.运行/test/Resource/init-schema完成数据库初始化；
+	3.运行/test/Resource/init-schema.sql中的sql语句完成数据库初始化以及初始数据构造；
 	4.运行ToutiaoApplication。
