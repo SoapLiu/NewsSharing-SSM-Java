@@ -1,8 +1,10 @@
 # NewsSharing-SSM-Java
 ![GitHub](https://img.shields.io/github/license/SoapLiu/NewsSharing-SSM-Java.svg)
+***
 |Author|Yi Liu|
 |---|---
 |E-mail|liuyi95@hotmail.com
+***
 
 
 ## 目录
