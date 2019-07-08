@@ -131,7 +131,7 @@ __项目结构__
 
 ### 必要条件
 ------
-  *安装JRE，MySQL，Redis*
+  *安装JRE，MySQL，Redis*  
   *Java(TM) SE Runtime Environment (build 1.8.0_131-b11)*  
   *Mysql Server version: 5.7.19 MySQL Community Server (GPL)*  
   *Redis version=5.0.1*  
