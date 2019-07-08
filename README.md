@@ -1,4 +1,4 @@
-# MockToutiao
+# NewsSharing-SSM-Java
 
 ![GitHub](https://img.shields.io/github/license/SoapLiu/NewsSharing-SSM-Java.svg)
 ****
