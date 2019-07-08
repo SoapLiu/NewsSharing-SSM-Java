@@ -20,7 +20,6 @@ import java.util.Random;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-@Sql("/init-schema.sql")
 public class InitDatabaseTest {
 
     @Autowired

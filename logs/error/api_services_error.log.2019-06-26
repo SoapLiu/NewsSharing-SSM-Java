@@ -1,0 +1,193 @@
+2019-06-26-09-11 [http-nio-8080-exec-10] [org.thymeleaf.TemplateEngine] [ERROR] - [THYMELEAF][http-nio-8080-exec-10] Exception processing template "detail": Exception evaluating SpringEL expression: "commentvo.get('comments')" (detail:69)
+2019-06-26-09-42 [http-nio-8080-exec-7] [org.thymeleaf.TemplateEngine] [ERROR] - [THYMELEAF][http-nio-8080-exec-7] Exception processing template "detail": Exception evaluating SpringEL expression: "news.likeCount" (detail:11)
+2019-06-26-09-44 [http-nio-8080-exec-4] [org.thymeleaf.TemplateEngine] [ERROR] - [THYMELEAF][http-nio-8080-exec-4] Exception processing template "detail": Exception evaluating SpringEL expression: "news.likeCount" (detail:11)
+2019-06-26-09-46 [http-nio-8080-exec-9] [org.thymeleaf.TemplateEngine] [ERROR] - [THYMELEAF][http-nio-8080-exec-9] Exception processing template "detail": Exception evaluating SpringEL expression: "news.likeCount" (detail:11)
+2019-06-26-09-46 [http-nio-8080-exec-9] [org.thymeleaf.TemplateEngine] [ERROR] - [THYMELEAF][http-nio-8080-exec-9] Exception processing template "detail": Exception evaluating SpringEL expression: "news.image" (detail:18)
+2019-06-26-09-48 [http-nio-8080-exec-5] [org.thymeleaf.TemplateEngine] [ERROR] - [THYMELEAF][http-nio-8080-exec-5] Exception processing template "detail": Exception evaluating SpringEL expression: "owner.id" (detail:33)
+2019-06-26-10-12 [http-nio-8080-exec-6] [org.thymeleaf.TemplateEngine] [ERROR] - [THYMELEAF][http-nio-8080-exec-6] Exception processing template "detail": Exception evaluating SpringEL expression: "news.likeCount" (detail:11)
+2019-06-26-14-08 [http-nio-8080-exec-4] [com.liuyi.toutiao.controller.MessageController] [ERROR] - 发送消息失败
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2019-06-26 14:08:24' for key 'new_tablecol_UNIQUE'
+### The error may involve com.liuyi.toutiao.dao.MessageDAO.addMessage-Inline
+### The error occurred while setting parameters
+### SQL: insert into  message  ( from_id, to_id, content, conversation_id, has_read, created_date ) values (?, ?, ?, ?, ?, ?)
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2019-06-26 14:08:24' for key 'new_tablecol_UNIQUE'
+; SQL []; Duplicate entry '2019-06-26 14:08:24' for key 'new_tablecol_UNIQUE'; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2019-06-26 14:08:24' for key 'new_tablecol_UNIQUE'
+2019-06-26-14-08 [http-nio-8080-exec-5] [com.liuyi.toutiao.controller.MessageController] [ERROR] - 发送消息失败
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2019-06-26 14:08:24' for key 'new_tablecol_UNIQUE'
+### The error may involve com.liuyi.toutiao.dao.MessageDAO.addMessage-Inline
+### The error occurred while setting parameters
+### SQL: insert into  message  ( from_id, to_id, content, conversation_id, has_read, created_date ) values (?, ?, ?, ?, ?, ?)
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2019-06-26 14:08:24' for key 'new_tablecol_UNIQUE'
+; SQL []; Duplicate entry '2019-06-26 14:08:24' for key 'new_tablecol_UNIQUE'; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2019-06-26 14:08:24' for key 'new_tablecol_UNIQUE'
+2019-06-26-14-08 [http-nio-8080-exec-9] [com.liuyi.toutiao.controller.MessageController] [ERROR] - 发送消息失败
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2019-06-26 14:08:28' for key 'new_tablecol_UNIQUE'
+### The error may involve com.liuyi.toutiao.dao.MessageDAO.addMessage-Inline
+### The error occurred while setting parameters
+### SQL: insert into  message  ( from_id, to_id, content, conversation_id, has_read, created_date ) values (?, ?, ?, ?, ?, ?)
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2019-06-26 14:08:28' for key 'new_tablecol_UNIQUE'
+; SQL []; Duplicate entry '2019-06-26 14:08:28' for key 'new_tablecol_UNIQUE'; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2019-06-26 14:08:28' for key 'new_tablecol_UNIQUE'
+2019-06-26-14-10 [http-nio-8080-exec-5] [com.liuyi.toutiao.controller.MessageController] [ERROR] - 发送消息失败
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2019-06-26 14:10:35' for key 'new_tablecol_UNIQUE'
+### The error may involve com.liuyi.toutiao.dao.MessageDAO.addMessage-Inline
+### The error occurred while setting parameters
+### SQL: insert into  message  ( from_id, to_id, content, conversation_id, has_read, created_date ) values (?, ?, ?, ?, ?, ?)
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2019-06-26 14:10:35' for key 'new_tablecol_UNIQUE'
+; SQL []; Duplicate entry '2019-06-26 14:10:35' for key 'new_tablecol_UNIQUE'; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2019-06-26 14:10:35' for key 'new_tablecol_UNIQUE'
+2019-06-26-14-13 [http-nio-8080-exec-8] [org.thymeleaf.templateparser.ErrorHandler] [ERROR] - [THYMELEAF][http-nio-8080-exec-8] Fatal error during parsing
+org.xml.sax.SAXParseException; lineNumber: 11; columnNumber: 19; 元素类型 "img" 必须由匹配的结束标记 "</img>" 终止。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1472)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1749)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2967)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:327)
+	at org.thymeleaf.templateparser.xmlsax.AbstractNonValidatingSAXTemplateParser.doParse(AbstractNonValidatingSAXTemplateParser.java:209)
+	at org.thymeleaf.templateparser.xmlsax.AbstractNonValidatingSAXTemplateParser.parseTemplateUsingPool(AbstractNonValidatingSAXTemplateParser.java:134)
+	at org.thymeleaf.templateparser.xmlsax.AbstractNonValidatingSAXTemplateParser.parseTemplate(AbstractNonValidatingSAXTemplateParser.java:116)
+	at org.thymeleaf.TemplateRepository.getTemplate(TemplateRepository.java:278)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1104)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1060)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1011)
+	at org.thymeleaf.spring4.view.ThymeleafView.renderFragment(ThymeleafView.java:335)
+	at org.thymeleaf.spring4.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1286)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1041)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:984)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:798)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-06-26-14-13 [http-nio-8080-exec-8] [org.thymeleaf.TemplateEngine] [ERROR] - [THYMELEAF][http-nio-8080-exec-8] Exception processing template "letterDetail": Exception parsing document: template="letterDetail", line 11 - column 19
+2019-06-26-14-14 [http-nio-8080-exec-7] [org.thymeleaf.TemplateEngine] [ERROR] - [THYMELEAF][http-nio-8080-exec-7] Exception processing template "letterDetail": Could not parse as expression: "@{'/user/'+${message.get('messageReceiver').userId}" (letterDetail:9)
+2019-06-26-14-16 [http-nio-8080-exec-4] [org.thymeleaf.TemplateEngine] [ERROR] - [THYMELEAF][http-nio-8080-exec-4] Exception processing template "letterDetail": Exception evaluating SpringEL expression: "message.get('messageReceiver').userId" (letterDetail:9)
+2019-06-26-14-16 [http-nio-8080-exec-2] [org.thymeleaf.TemplateEngine] [ERROR] - [THYMELEAF][http-nio-8080-exec-2] Exception processing template "letterDetail": Exception evaluating SpringEL expression: "message.get('messageReceiver').userId" (letterDetail:9)
+2019-06-26-14-18 [http-nio-8080-exec-8] [org.thymeleaf.TemplateEngine] [ERROR] - [THYMELEAF][http-nio-8080-exec-8] Exception processing template "letterDetail": Exception evaluating SpringEL expression: "message.get('messageReceiver').userId" (letterDetail:9)
+2019-06-26-14-18 [http-nio-8080-exec-7] [org.thymeleaf.TemplateEngine] [ERROR] - [THYMELEAF][http-nio-8080-exec-7] Exception processing template "letterDetail": Exception evaluating SpringEL expression: "message.get('messageReceiver').userId" (letterDetail:9)
+2019-06-26-14-18 [http-nio-8080-exec-5] [org.thymeleaf.TemplateEngine] [ERROR] - [THYMELEAF][http-nio-8080-exec-5] Exception processing template "letterDetail": Exception evaluating SpringEL expression: "message.get('messageReceiver').userId" (letterDetail:9)
+2019-06-26-14-18 [http-nio-8080-exec-9] [org.thymeleaf.TemplateEngine] [ERROR] - [THYMELEAF][http-nio-8080-exec-9] Exception processing template "letterDetail": Exception evaluating SpringEL expression: "message.get('messageReceiver').userId" (letterDetail:9)
+2019-06-26-14-18 [http-nio-8080-exec-6] [org.thymeleaf.TemplateEngine] [ERROR] - [THYMELEAF][http-nio-8080-exec-6] Exception processing template "letterDetail": Exception evaluating SpringEL expression: "message.get('messageReceiver').userId" (letterDetail:9)
+2019-06-26-14-19 [http-nio-8080-exec-8] [org.thymeleaf.TemplateEngine] [ERROR] - [THYMELEAF][http-nio-8080-exec-8] Exception processing template "letterDetail": Exception evaluating SpringEL expression: "message.get('messageReceiver').userId" (letterDetail:9)
+2019-06-26-14-21 [http-nio-8080-exec-1] [org.thymeleaf.TemplateEngine] [ERROR] - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "letterDetail": Exception evaluating SpringEL expression: "message.get('messageReceiver').userId" (letterDetail:9)
+2019-06-26-14-23 [http-nio-8080-exec-1] [org.thymeleaf.TemplateEngine] [ERROR] - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "letterDetail": Exception evaluating SpringEL expression: "#dates.format(${mvo.get('message').createdDate}, 'yyyy-MM-dd HH:mm:ss')" (letterDetail:16)
+2019-06-26-14-41 [http-nio-8080-exec-9] [com.liuyi.toutiao.controller.MessageController] [ERROR] - 发送消息失败
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2019-06-26 14:41:11' for key 'new_tablecol_UNIQUE'
+### The error may involve com.liuyi.toutiao.dao.MessageDAO.addMessage-Inline
+### The error occurred while setting parameters
+### SQL: insert into  message  ( from_id, to_id, content, conversation_id, has_read, created_date ) values (?, ?, ?, ?, ?, ?)
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2019-06-26 14:41:11' for key 'new_tablecol_UNIQUE'
+; SQL []; Duplicate entry '2019-06-26 14:41:11' for key 'new_tablecol_UNIQUE'; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2019-06-26 14:41:11' for key 'new_tablecol_UNIQUE'
+2019-06-26-14-41 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.MessageController] [ERROR] - 发送消息失败
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2019-06-26 14:41:12' for key 'new_tablecol_UNIQUE'
+### The error may involve com.liuyi.toutiao.dao.MessageDAO.addMessage-Inline
+### The error occurred while setting parameters
+### SQL: insert into  message  ( from_id, to_id, content, conversation_id, has_read, created_date ) values (?, ?, ?, ?, ?, ?)
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2019-06-26 14:41:12' for key 'new_tablecol_UNIQUE'
+; SQL []; Duplicate entry '2019-06-26 14:41:12' for key 'new_tablecol_UNIQUE'; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2019-06-26 14:41:12' for key 'new_tablecol_UNIQUE'
+2019-06-26-16-56 [http-nio-8080-exec-7] [com.liuyi.toutiao.controller.MessageController] [ERROR] - 获取消息列表失败
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 't.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+### The error may exist in com/liuyi/toutiao/dao/MessageDAO.java (best guess)
+### The error may involve com.liuyi.toutiao.dao.MessageDAO.getConversationList-Inline
+### The error occurred while setting parameters
+### SQL: select  id, from_id, to_id, content, conversation_id, has_read, created_date , count(id) as id from (select * from  message  where from_id=? or to_id=? order by id desc limit 9999) as t group by conversation_id order by id desc limit ?, ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 't.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 't.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+2019-06-26-16-56 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.MessageController] [ERROR] - 获取消息列表失败
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 't.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+### The error may exist in com/liuyi/toutiao/dao/MessageDAO.java (best guess)
+### The error may involve com.liuyi.toutiao.dao.MessageDAO.getConversationList-Inline
+### The error occurred while setting parameters
+### SQL: select  id, from_id, to_id, content, conversation_id, has_read, created_date , count(id) as id from (select * from  message  where from_id=? or to_id=? order by id desc limit 9999) as t group by conversation_id order by id desc limit ?, ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 't.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 't.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+2019-06-26-16-56 [http-nio-8080-exec-10] [com.liuyi.toutiao.controller.MessageController] [ERROR] - 获取消息列表失败
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 't.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+### The error may exist in com/liuyi/toutiao/dao/MessageDAO.java (best guess)
+### The error may involve com.liuyi.toutiao.dao.MessageDAO.getConversationList-Inline
+### The error occurred while setting parameters
+### SQL: select  id, from_id, to_id, content, conversation_id, has_read, created_date , count(id) as id from (select * from  message  where from_id=? or to_id=? order by id desc limit 9999) as t group by conversation_id order by id desc limit ?, ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 't.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 't.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+2019-06-26-16-56 [http-nio-8080-exec-9] [com.liuyi.toutiao.controller.MessageController] [ERROR] - 获取消息列表失败
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 't.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+### The error may exist in com/liuyi/toutiao/dao/MessageDAO.java (best guess)
+### The error may involve com.liuyi.toutiao.dao.MessageDAO.getConversationList-Inline
+### The error occurred while setting parameters
+### SQL: select  id, from_id, to_id, content, conversation_id, has_read, created_date , count(id) as id from (select * from  message  where from_id=? or to_id=? order by id desc limit 9999) as t group by conversation_id order by id desc limit ?, ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 't.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 't.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+2019-06-26-18-42 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.MessageController] [ERROR] - 获取消息列表失败
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Every derived table must have its own alias
+### The error may exist in com/liuyi/toutiao/dao/MessageDAO.java (best guess)
+### The error may involve com.liuyi.toutiao.dao.MessageDAO.getConversationList-Inline
+### The error occurred while setting parameters
+### SQL: select count(id) as id, conversation_id, any_value(from_id) as from_id, any_value(to_id) as to_id, any_value(content) as content, any_value(created_date) as created_date, any_value(has_read) as has_read from (select * from message where from_id=? or to_id=? order by id desc) group by conversation_id ?, ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Every derived table must have its own alias
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Every derived table must have its own alias
+2019-06-26-18-42 [http-nio-8080-exec-5] [com.liuyi.toutiao.controller.MessageController] [ERROR] - 获取消息列表失败
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Every derived table must have its own alias
+### The error may exist in com/liuyi/toutiao/dao/MessageDAO.java (best guess)
+### The error may involve com.liuyi.toutiao.dao.MessageDAO.getConversationList-Inline
+### The error occurred while setting parameters
+### SQL: select count(id) as id, conversation_id, any_value(from_id) as from_id, any_value(to_id) as to_id, any_value(content) as content, any_value(created_date) as created_date, any_value(has_read) as has_read from (select * from message where from_id=? or to_id=? order by id desc) group by conversation_id ?, ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Every derived table must have its own alias
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Every derived table must have its own alias
+2019-06-26-19-17 [http-nio-8080-exec-4] [com.liuyi.toutiao.controller.MessageController] [ERROR] - 获取消息列表失败null
+2019-06-26-19-17 [http-nio-8080-exec-4] [com.liuyi.toutiao.controller.MessageController] [ERROR] - 获取消息列表失败null
+2019-06-26-20-44 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.MessageController] [ERROR] - 获取消息列表失败nested exception is org.apache.ibatis.binding.BindingException: Parameter 'toId' not found. Available parameters are [conversationId, hasRead, param3, fromId, param1, param2]
+2019-06-26-20-44 [http-nio-8080-exec-8] [com.liuyi.toutiao.controller.MessageController] [ERROR] - 获取消息列表失败nested exception is org.apache.ibatis.binding.BindingException: Parameter 'toId' not found. Available parameters are [conversationId, hasRead, param3, fromId, param1, param2]
+2019-06-26-20-49 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.MessageController] [ERROR] - 获取消息列表失败
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'creaed_date' in 'order clause'
+### The error may exist in com/liuyi/toutiao/dao/MessageDAO.java (best guess)
+### The error may involve com.liuyi.toutiao.dao.MessageDAO.getConversationList-Inline
+### The error occurred while setting parameters
+### SQL: select count(id) as id, conversation_id, any_value(from_id) as from_id, any_value(to_id) as to_id, any_value(content) as content, any_value(created_date) as created_date, any_value(has_read) as has_read from (select * from message where from_id=? or to_id=? order by id desc) as t group by conversation_id order by creaed_date desc limit ?, ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'creaed_date' in 'order clause'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'creaed_date' in 'order clause'

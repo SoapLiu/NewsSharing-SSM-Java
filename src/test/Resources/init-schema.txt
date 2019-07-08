@@ -1,0 +1,171 @@
+-- MySQL dump 10.13  Distrib 5.7.19, for macos10.12 (x86_64)
+--
+-- Host: localhost    Database: toutiao
+-- ------------------------------------------------------
+-- Server version	5.7.19
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `comment`
+--
+
+DROP TABLE IF EXISTS `comment`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `comment` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `content` text CHARACTER SET utf8 COLLATE utf8_bin,
+  `entity_id` int(11) DEFAULT NULL,
+  `entity_type` int(11) DEFAULT NULL,
+  `created_date` datetime DEFAULT NULL,
+  `user_id` int(11) DEFAULT NULL,
+  `status` int(11) DEFAULT '0',
+  PRIMARY KEY (`id`),
+  KEY `entity` (`entity_id`,`entity_type`)
+) ENGINE=InnoDB AUTO_INCREMENT=143 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `comment`
+--
+
+LOCK TABLES `comment` WRITE;
+/*!40000 ALTER TABLE `comment` DISABLE KEYS */;
+INSERT INTO `comment` VALUES (1,'content test',1,0,'2019-06-26 09:35:37',1,0),(2,'content test',2,0,'2019-06-26 09:35:37',2,0),(3,'content test',3,0,'2019-06-26 09:35:37',3,0),(4,'content test',4,0,'2019-06-26 09:35:37',4,0),(5,'content test',5,0,'2019-06-26 09:35:37',5,0),(6,'content test',6,0,'2019-06-26 09:35:37',6,0),(7,'content test',7,0,'2019-06-26 09:35:37',7,0),(8,'content test',8,0,'2019-06-26 09:35:37',8,0),(9,'content test',9,0,'2019-06-26 09:35:37',9,0),(10,'content test',10,0,'2019-06-26 09:35:37',10,0),(11,'content test',11,0,'2019-06-26 09:35:37',11,0),(12,'content test',12,0,'2019-06-26 09:35:37',12,0),(13,'content test',13,0,'2019-06-26 09:35:37',13,0),(14,'content test',14,0,'2019-06-26 09:35:37',14,0),(15,'content test',1,0,'2019-06-26 09:38:58',1,0),(16,'content test',2,0,'2019-06-26 09:38:58',2,0),(17,'content test',3,0,'2019-06-26 09:38:58',3,0),(18,'content test',4,0,'2019-06-26 09:38:58',4,0),(19,'content test',5,0,'2019-06-26 09:38:58',5,0),(20,'content test',6,0,'2019-06-26 09:38:58',6,0),(21,'content test',7,0,'2019-06-26 09:38:58',7,0),(22,'content test',8,0,'2019-06-26 09:38:58',8,0),(23,'content test',9,0,'2019-06-26 09:38:58',9,0),(24,'content test',10,0,'2019-06-26 09:38:58',10,0),(25,'content test',11,0,'2019-06-26 09:38:58',11,0),(26,'content test',12,0,'2019-06-26 09:38:58',12,0),(27,'content test',13,0,'2019-06-26 09:38:58',13,0),(28,'content test',14,0,'2019-06-26 09:38:58',14,0),(29,'content test',0,0,'2019-06-26 09:40:58',0,0),(30,'content test',1,0,'2019-06-26 09:40:58',1,0),(31,'content test',2,0,'2019-06-26 09:40:58',2,0),(32,'content test',3,0,'2019-06-26 09:40:58',3,0),(33,'content test',4,0,'2019-06-26 09:40:58',4,0),(34,'content test',5,0,'2019-06-26 09:40:58',5,0),(35,'content test',6,0,'2019-06-26 09:40:58',6,0),(36,'content test',7,0,'2019-06-26 09:40:58',7,0),(37,'content test',8,0,'2019-06-26 09:40:59',8,0),(38,'content test',9,0,'2019-06-26 09:40:59',9,0),(39,'content test',10,0,'2019-06-26 09:40:59',10,0),(40,'content test',11,0,'2019-06-26 09:40:59',11,0),(41,'content test',12,0,'2019-06-26 09:40:59',12,0),(42,'content test',13,0,'2019-06-26 09:40:59',13,0),(43,'content test',14,0,'2019-06-26 09:40:59',14,0),(44,'content test',15,0,'2019-06-26 09:40:59',15,0),(45,'content test',16,0,'2019-06-26 09:40:59',16,0),(46,'content test',17,0,'2019-06-26 09:40:59',17,0),(47,'content test',18,0,'2019-06-26 09:40:59',18,0),(48,'content test',0,0,'2019-06-26 09:41:48',0,0),(49,'content test',1,0,'2019-06-26 09:41:48',1,0),(50,'content test',2,0,'2019-06-26 09:41:48',2,0),(51,'content test',3,0,'2019-06-26 09:41:48',3,0),(52,'content test',4,0,'2019-06-26 09:41:48',4,0),(53,'content test',5,0,'2019-06-26 09:41:48',5,0),(54,'content test',6,0,'2019-06-26 09:41:48',6,0),(55,'content test',7,0,'2019-06-26 09:41:48',7,0),(56,'content test',8,0,'2019-06-26 09:41:48',8,0),(57,'content test',9,0,'2019-06-26 09:41:48',9,0),(58,'content test',10,0,'2019-06-26 09:41:48',10,0),(59,'content test',11,0,'2019-06-26 09:41:48',11,0),(60,'content test',12,0,'2019-06-26 09:41:48',12,0),(61,'content test',13,0,'2019-06-26 09:41:48',13,0),(62,'content test',14,0,'2019-06-26 09:41:48',14,0),(63,'content test',15,0,'2019-06-26 09:41:48',15,0),(64,'content test',16,0,'2019-06-26 09:41:48',16,0),(65,'content test',17,0,'2019-06-26 09:41:48',17,0),(66,'content test',18,0,'2019-06-26 09:41:48',18,0),(67,'111',19,0,'2019-06-26 09:42:58',20,0),(68,'                            111',19,0,'2019-06-26 09:44:07',20,0),(69,'                            111',19,0,'2019-06-26 09:46:03',20,0),(70,'                            111',19,0,'2019-06-26 09:46:42',20,0),(71,'                            111',19,0,'2019-06-26 09:48:59',20,0),(72,'刘懿',19,0,'2019-06-26 10:12:40',20,0),(73,'                            aaa',19,0,'2019-06-26 10:19:58',20,0),(74,'                            ?',19,0,'2019-06-26 10:20:03',20,0),(75,'                            test',19,0,'2019-06-26 10:29:50',20,0),(76,'??',19,0,'2019-06-26 10:59:15',20,0),(77,'???\r\n',18,0,'2019-06-26 10:59:36',20,0),(78,'                            a',18,0,'2019-06-26 11:01:33',20,0),(79,'                            a',18,0,'2019-06-26 11:01:36',20,0),(80,'                            aaaa',19,0,'2019-06-26 11:05:21',20,0),(81,'                            12',19,0,'2019-06-26 11:05:50',20,0),(82,'                            for god\'s sake',20,0,'2019-06-26 11:20:24',20,0),(83,'                            ??',18,0,'2019-06-26 11:28:23',20,0),(84,'content test',0,0,'2019-06-26 21:02:00',0,0),(85,'content test',1,0,'2019-06-26 21:02:00',1,0),(86,'content test',2,0,'2019-06-26 21:02:00',2,0),(87,'content test',3,0,'2019-06-26 21:02:00',3,0),(88,'content test',4,0,'2019-06-26 21:02:00',4,0),(89,'content test',5,0,'2019-06-26 21:02:00',5,0),(90,'content test',6,0,'2019-06-26 21:02:00',6,0),(91,'content test',7,0,'2019-06-26 21:02:00',7,0),(92,'content test',8,0,'2019-06-26 21:02:00',8,0),(93,'content test',9,0,'2019-06-26 21:02:00',9,0),(94,'content test',10,0,'2019-06-26 21:02:00',10,0),(95,'content test',11,0,'2019-06-26 21:02:00',11,0),(96,'content test',12,0,'2019-06-26 21:02:00',12,0),(97,'content test',13,0,'2019-06-26 21:02:00',13,0),(98,'content test',14,0,'2019-06-26 21:02:00',14,0),(99,'content test',15,0,'2019-06-26 21:02:00',15,0),(100,'content test',16,0,'2019-06-26 21:02:00',16,0),(101,'content test',17,0,'2019-06-26 21:02:01',17,0),(102,'content test',18,0,'2019-06-26 21:02:01',18,0),(103,'content test',0,0,'2019-06-26 21:12:48',0,0),(104,'content test',1,0,'2019-06-26 21:12:48',1,0),(105,'content test',2,0,'2019-06-26 21:12:48',2,0),(106,'content test',3,0,'2019-06-26 21:12:48',3,0),(107,'content test',4,0,'2019-06-26 21:12:48',4,0),(108,'content test',5,0,'2019-06-26 21:12:48',5,0),(109,'content test',6,0,'2019-06-26 21:12:48',6,0),(110,'content test',7,0,'2019-06-26 21:12:48',7,0),(111,'content test',8,0,'2019-06-26 21:12:48',8,0),(112,'content test',9,0,'2019-06-26 21:12:48',9,0),(113,'content test',10,0,'2019-06-26 21:12:48',10,0),(114,'content test',11,0,'2019-06-26 21:12:48',11,0),(115,'content test',12,0,'2019-06-26 21:12:48',12,0),(116,'content test',13,0,'2019-06-26 21:12:48',13,0),(117,'content test',14,0,'2019-06-26 21:12:48',14,0),(118,'content test',15,0,'2019-06-26 21:12:48',15,0),(119,'content test',16,0,'2019-06-26 21:12:48',16,0),(120,'content test',17,0,'2019-06-26 21:12:48',17,0),(121,'content test',18,0,'2019-06-26 21:12:48',18,0),(122,'content test',0,0,'2019-06-26 21:18:47',0,0),(123,'content test',1,0,'2019-06-26 21:18:47',1,0),(124,'content test',2,0,'2019-06-26 21:18:47',2,0),(125,'content test',3,0,'2019-06-26 21:18:47',3,0),(126,'content test',4,0,'2019-06-26 21:18:47',4,0),(127,'content test',5,0,'2019-06-26 21:18:47',5,0),(128,'content test',6,0,'2019-06-26 21:18:47',6,0),(129,'content test',7,0,'2019-06-26 21:18:47',7,0),(130,'content test',8,0,'2019-06-26 21:18:47',8,0),(131,'content test',9,0,'2019-06-26 21:18:47',9,0),(132,'content test',10,0,'2019-06-26 21:18:47',10,0),(133,'content test',11,0,'2019-06-26 21:18:47',11,0),(134,'content test',12,0,'2019-06-26 21:18:47',12,0),(135,'content test',13,0,'2019-06-26 21:18:47',13,0),(136,'content test',14,0,'2019-06-26 21:18:47',14,0),(137,'content test',15,0,'2019-06-26 21:18:47',15,0),(138,'content test',16,0,'2019-06-26 21:18:47',16,0),(139,'content test',17,0,'2019-06-26 21:18:47',17,0),(140,'content test',18,0,'2019-06-26 21:18:48',18,0),(141,'aa',20,0,'2019-06-27 18:39:53',20,0),(142,'aa',19,0,'2019-06-27 21:19:50',20,0);
+/*!40000 ALTER TABLE `comment` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `login_ticket`
+--
+
+DROP TABLE IF EXISTS `login_ticket`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `login_ticket` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) NOT NULL,
+  `ticket` varchar(45) COLLATE utf8_bin NOT NULL,
+  `expired` datetime NOT NULL,
+  `status` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `login_ticket`
+--
+
+LOCK TABLES `login_ticket` WRITE;
+/*!40000 ALTER TABLE `login_ticket` DISABLE KEYS */;
+INSERT INTO `login_ticket` VALUES (1,1,'TICKET0','2019-06-26 21:18:47',2),(2,2,'TICKET1','2019-06-27 02:18:47',2),(3,3,'TICKET2','2019-06-27 07:18:47',2),(4,4,'TICKET3','2019-06-27 12:18:47',2),(5,5,'TICKET4','2019-06-27 17:18:47',2),(6,6,'TICKET5','2019-06-27 22:18:47',2),(7,7,'TICKET6','2019-06-28 03:18:47',2),(8,8,'TICKET7','2019-06-28 08:18:47',2),(9,9,'TICKET8','2019-06-28 13:18:47',2),(10,10,'TICKET9','2019-06-28 18:18:47',2),(11,11,'TICKET10','2019-06-28 23:18:47',2),(12,12,'TICKET11','2019-06-29 04:18:47',2),(13,13,'TICKET12','2019-06-29 09:18:47',2),(14,14,'TICKET13','2019-06-29 14:18:47',2),(15,15,'TICKET14','2019-06-29 19:18:47',2),(16,16,'TICKET15','2019-06-30 00:18:47',2),(17,17,'TICKET16','2019-06-30 05:18:47',2),(18,18,'TICKET17','2019-06-30 10:18:47',2),(19,19,'TICKET18','2019-06-30 15:18:48',2),(20,20,'17840a92743a416195d7c4cd3f405d75','2019-06-28 10:47:40',0),(21,20,'d24af77f776749a599177df1bdc8b0a9','2019-06-28 10:47:47',1),(22,20,'841f1b1b53db4a3eb7822da94a46508b','2019-06-28 11:32:38',1),(23,20,'753599ef2b754724a82b85b251be5afa','2019-06-28 20:18:11',1),(24,20,'a97f8004b53746d1a12e54696991aed2','2019-06-28 20:30:42',0),(25,20,'c015ca30f57541bea11ab85a4e296e03','2019-07-04 16:11:41',1),(26,20,'e0d81e9b264b423492fdde52d292ab84','2019-07-04 17:56:24',0);
+/*!40000 ALTER TABLE `login_ticket` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `message`
+--
+
+DROP TABLE IF EXISTS `message`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `message` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `from_id` int(11) DEFAULT NULL,
+  `to_id` int(11) DEFAULT NULL,
+  `content` text,
+  `created_date` datetime DEFAULT NULL,
+  `conversation_id` varchar(45) DEFAULT NULL,
+  `has_read` int(11) DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=64 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `message`
+--
+
+LOCK TABLES `message` WRITE;
+/*!40000 ALTER TABLE `message` DISABLE KEYS */;
+INSERT INTO `message` VALUES (13,20,1,'ahhahah','2019-06-26 14:10:30','1_20',1),(14,20,1,'ahhahah','2019-06-26 14:10:33','1_20',1),(15,20,1,'ahhahah','2019-06-26 14:10:34','1_20',1),(16,20,1,'ahhahah','2019-06-26 14:10:35','1_20',1),(18,20,1,'ahhahah','2019-06-26 14:10:36','1_20',1),(19,20,1,'ahhahah','2019-06-26 14:10:37','1_20',1),(20,20,1,'ahhahah','2019-06-26 14:10:38','1_20',1),(21,20,1,'ahhahah','2019-06-26 14:10:39','1_20',1),(22,20,2,'ahhahah','2019-06-26 14:27:13','2_20',1),(23,20,2,'ahhahah','2019-06-26 14:27:14','2_20',1),(24,20,2,'ahhahah','2019-06-26 14:27:15','2_20',1),(25,20,2,'ahhahah','2019-06-26 14:27:16','2_20',1),(26,20,2,'ahhahah','2019-06-26 14:27:17','2_20',1),(27,20,3,'ahhahah','2019-06-26 14:41:10','3_20',1),(28,20,3,'ahhahah','2019-06-26 14:41:11','3_20',1),(30,20,3,'ahhahah','2019-06-26 14:41:12','3_20',1),(32,20,3,'ahhahah','2019-06-26 14:41:13','3_20',1),(33,20,3,'ahhahah','2019-06-26 14:41:16','3_20',1),(34,20,3,'ahhahah','2019-06-26 14:42:05','3_20',1),(35,20,3,'ahhahah','2019-06-26 14:42:06','3_20',1),(36,20,3,'ahhahah','2019-06-26 14:42:06','3_20',1),(37,20,3,'ahhahah','2019-06-26 14:42:06','3_20',1),(38,20,3,'ahhahah','2019-06-26 14:42:06','3_20',1),(39,20,3,'ahhahah','2019-06-26 14:42:07','3_20',1),(40,20,3,'ahhahah','2019-06-26 14:42:07','3_20',1),(41,20,3,'ahhahah','2019-06-26 14:42:07','3_20',1),(42,20,3,'ahhahah','2019-06-26 14:42:07','3_20',1),(43,1,20,'hihi','2019-06-26 19:27:40','1_20',1),(44,1,20,'hihi','2019-06-26 19:27:41','1_20',1),(45,1,20,'hihi','2019-06-26 19:27:42','1_20',1),(46,1,20,'hihi','2019-06-26 19:27:43','1_20',1),(47,1,20,'hihi','2019-06-26 19:27:44','1_20',1),(48,1,20,'hihi','2019-06-26 20:41:25','1_20',1),(49,1,20,'hihi','2019-06-26 20:41:26','1_20',1),(50,1,20,'hihi','2019-06-26 20:41:34','1_20',1),(51,20,1,'hihi','2019-06-26 20:46:20','1_20',1),(52,20,1,'hihi','2019-06-26 20:50:17','1_20',1),(53,20,1,'1111','2019-06-27 10:55:25','1_20',0),(54,20,2,'1111','2019-06-27 10:55:45','2_20',1),(55,20,1,'55555','2019-06-27 11:06:00','1_20',0),(56,20,3,'55555','2019-06-27 11:06:19','3_20',1),(57,20,3,'55555','2019-06-27 11:32:46','3_20',1),(61,20,20,'user: 20 likes your post!','2019-07-03 17:10:19','20_20',1),(62,20,20,'user: 20 likes your post!','2019-07-03 17:10:19','20_20',1),(63,0,20,'suspicious log in activity','2019-07-03 17:56:25',NULL,0);
+/*!40000 ALTER TABLE `message` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `news`
+--
+
+DROP TABLE IF EXISTS `news`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `news` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `title` varchar(128) NOT NULL DEFAULT '',
+  `link` varchar(128) NOT NULL DEFAULT '',
+  `image` varchar(256) NOT NULL DEFAULT '',
+  `like_count` int(11) NOT NULL,
+  `comment_count` int(11) NOT NULL,
+  `created_date` datetime NOT NULL,
+  `user_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `news`
+--
+
+LOCK TABLES `news` WRITE;
+/*!40000 ALTER TABLE `news` DISABLE KEYS */;
+INSERT INTO `news` VALUES (1,'Title{0}','http://liuyi.cool/0.html','/images/img/news.jpeg',1,0,'2019-06-26 21:18:47',1),(2,'Title{1}','http://liuyi.cool/1.html','/images/img/news.jpeg',2,1,'2019-06-27 02:18:47',2),(3,'Title{2}','http://liuyi.cool/2.html','/images/img/news.jpeg',3,2,'2019-06-27 07:18:47',3),(4,'Title{3}','http://liuyi.cool/3.html','/images/img/news.jpeg',4,3,'2019-06-27 12:18:47',4),(5,'Title{4}','http://liuyi.cool/4.html','/images/img/news.jpeg',5,4,'2019-06-27 17:18:47',5),(6,'Title{5}','http://liuyi.cool/5.html','/images/img/news.jpeg',6,5,'2019-06-27 22:18:47',6),(7,'Title{6}','http://liuyi.cool/6.html','/images/img/news.jpeg',7,6,'2019-06-28 03:18:47',7),(8,'Title{7}','http://liuyi.cool/7.html','/images/img/news.jpeg',8,7,'2019-06-28 08:18:47',8),(9,'Title{8}','http://liuyi.cool/8.html','/images/img/news.jpeg',9,8,'2019-06-28 13:18:47',9),(10,'Title{9}','http://liuyi.cool/9.html','/images/img/news.jpeg',10,9,'2019-06-28 18:18:47',10),(11,'Title{10}','http://liuyi.cool/10.html','/images/img/news.jpeg',11,10,'2019-06-28 23:18:47',11),(12,'Title{11}','http://liuyi.cool/11.html','/images/img/news.jpeg',12,11,'2019-06-29 04:18:47',12),(13,'Title{12}','http://liuyi.cool/12.html','/images/img/news.jpeg',13,12,'2019-06-29 09:18:47',13),(14,'Title{13}','http://liuyi.cool/13.html','/images/img/news.jpeg',1,13,'2019-06-29 14:18:47',14),(15,'Title{14}','http://liuyi.cool/14.html','/images/img/news.jpeg',0,14,'2019-06-29 19:18:47',15),(16,'Title{15}','http://liuyi.cool/15.html','/images/img/news.jpeg',1,15,'2019-06-30 00:18:47',16),(17,'Title{16}','http://liuyi.cool/16.html','/images/img/news.jpeg',1,16,'2019-06-30 05:18:47',17),(18,'Title{17}','http://liuyi.cool/17.html','/images/img/news.jpeg',1,17,'2019-06-30 10:18:47',18),(19,'Title{18}','http://liuyi.cool/18.html','/images/img/news.jpeg',1,13,'2019-06-30 15:18:48',19),(20,'aaaaa','aaaaaa','http://127.0.0.1:8080/image?name=7b91d744446f44bd83183ed0afa61636.jpg',0,2,'2019-06-27 18:39:43',20),(21,'haha','hahaha','http://127.0.0.1:8080/image?name=947984a11f984692909dc1af2ff9e58d.jpg',1,0,'2019-07-03 17:01:36',20),(22,'aaaaaa','aaaaa','http://127.0.0.1:8080/image?name=13d1a2f248ed47a4b7c13a9b13a0b849.jpg',1,0,'2019-07-03 17:08:15',20);
+/*!40000 ALTER TABLE `news` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `user`
+--
+
+DROP TABLE IF EXISTS `user`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `user` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(64) NOT NULL DEFAULT '',
+  `password` varchar(128) NOT NULL DEFAULT '',
+  `salt` varchar(32) NOT NULL DEFAULT '',
+  `head_url` varchar(256) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `user`
+--
+
+LOCK TABLES `user` WRITE;
+/*!40000 ALTER TABLE `user` DISABLE KEYS */;
+INSERT INTO `user` VALUES (1,'USER0','','','/images/img/default.png'),(2,'USER1','','','/images/img/default.png'),(3,'USER2','','','/images/img/default.png'),(4,'USER3','','','/images/img/default.png'),(5,'USER4','','','/images/img/default.png'),(6,'USER5','','','/images/img/default.png'),(7,'USER6','','','/images/img/default.png'),(8,'USER7','','','/images/img/default.png'),(9,'USER8','','','/images/img/default.png'),(10,'USER9','','','/images/img/default.png'),(11,'USER10','','','/images/img/default.png'),(12,'USER11','','','/images/img/default.png'),(13,'USER12','','','/images/img/default.png'),(14,'USER13','','','/images/img/default.png'),(15,'USER14','','','/images/img/default.png'),(16,'USER15','','','/images/img/default.png'),(17,'USER16','','','/images/img/default.png'),(18,'USER17','','','/images/img/default.png'),(19,'USER18','','','/images/img/default.png'),(20,'test','0D1726977CEC06AB4BC0ED7DBA61300F','a3041','/images/img/default.png');
+/*!40000 ALTER TABLE `user` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2019-07-08 16:11:27

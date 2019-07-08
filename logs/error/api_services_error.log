@@ -1,0 +1,20 @@
+2019-07-03-16-11 [http-nio-8080-exec-4] [com.liuyi.toutiao.controller.LikeController] [ERROR] - 点赞失败null
+2019-07-03-16-12 [Thread-17] [com.liuyi.toutiao.async.EventConsumer] [ERROR] - 不能识别的事件
+2019-07-03-16-30 [Thread-35] [com.liuyi.toutiao.async.EventConsumer] [ERROR] - 不能识别的事件
+2019-07-03-16-32 [restartedMain] [com.liuyi.toutiao.async.EventConsumer] [ERROR] - 啊哈LIKE
+2019-07-03-16-33 [Thread-17] [com.liuyi.toutiao.async.EventConsumer] [ERROR] - 不能识别的事件
+2019-07-03-16-34 [Thread-35] [com.liuyi.toutiao.async.EventConsumer] [ERROR] - 不能识别的事件
+2019-07-03-16-34 [restartedMain] [com.liuyi.toutiao.async.EventConsumer] [ERROR] - 啊哈LIKE
+2019-07-03-16-34 [restartedMain] [com.liuyi.toutiao.async.EventConsumer] [ERROR] - 啊哈啊LIKE
+2019-07-03-16-35 [Thread-15] [com.liuyi.toutiao.async.EventConsumer] [ERROR] - 不能识别的事件
+2019-07-03-16-35 [restartedMain] [com.liuyi.toutiao.async.EventConsumer] [ERROR] - 啊哈啊a aa
+2019-07-03-16-35 [restartedMain] [com.liuyi.toutiao.async.EventConsumer] [ERROR] - 啊哈LIKE
+2019-07-03-16-35 [restartedMain] [com.liuyi.toutiao.async.EventConsumer] [ERROR] - 啊哈啊LIKE
+2019-07-03-16-39 [Thread-13] [com.liuyi.toutiao.async.EventConsumer] [ERROR] - 不能识别的事件
+2019-07-03-16-42 [Thread-15] [com.liuyi.toutiao.async.EventConsumer] [ERROR] - 不能识别的事件
+2019-07-03-16-43 [Thread-15] [com.liuyi.toutiao.async.EventConsumer] [ERROR] - 不能识别的事件
+2019-07-03-16-51 [Thread-16] [com.liuyi.toutiao.async.EventConsumer] [ERROR] - 不能识别的事件
+2019-07-03-16-56 [Thread-14] [com.liuyi.toutiao.async.handler.LikeHandler] [ERROR] - 啊哈哈哈哈哈哈哈
+2019-07-03-17-01 [http-nio-8080-exec-8] [org.thymeleaf.TemplateEngine] [ERROR] - [THYMELEAF][http-nio-8080-exec-8] Exception processing template "letter": Exception evaluating SpringEL expression: "conversation.get('conversationReceiver').id" (letter:25)
+2019-07-03-17-04 [http-nio-8080-exec-9] [org.thymeleaf.TemplateEngine] [ERROR] - [THYMELEAF][http-nio-8080-exec-9] Exception processing template "letter": Exception evaluating SpringEL expression: "conversation.get('conversationReceiver').id" (letter:25)
+2019-07-03-17-05 [http-nio-8080-exec-4] [org.thymeleaf.TemplateEngine] [ERROR] - [THYMELEAF][http-nio-8080-exec-4] Exception processing template "letter": Exception evaluating SpringEL expression: "conversation.get('conversationReceiver').id" (letter:25)

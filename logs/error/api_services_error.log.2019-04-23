@@ -1,0 +1,102 @@
+2019-04-23-13-10 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - createdDay : Wed Dec 31 19:00:00 EST 1969
+2019-04-23-13-10 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - newsDay : null
+2019-04-23-13-13 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - dayFromDB : Fri Apr 19 14:59:42 EDT 2019
+2019-04-23-13-13 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - createdDay : Wed Dec 31 19:00:00 EST 1969
+2019-04-23-13-13 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - newsDay : null
+2019-04-23-13-26 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - dayFromDB : Fri Apr 19 14:59:42 EDT 2019
+2019-04-23-13-26 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - createdDay : null
+2019-04-23-13-26 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - newsDay : null
+2019-04-23-13-31 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - createdDay : 1969-12-31
+2019-04-23-13-31 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - newsDay : 2019-04-19
+2019-04-23-13-35 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 加到voss里 1
+2019-04-23-13-35 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 加到voss里 2
+2019-04-23-13-37 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 加到voss里 1 date 2019-04-19
+2019-04-23-13-37 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 加到voss里 2 date 2019-04-18
+2019-04-23-13-37 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 加到voss里 3 date 2019-04-17
+2019-04-23-13-37 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 加到voss里 4 date 2019-04-16
+2019-04-23-13-41 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 加到voss里 1 date 2019-04-19
+2019-04-23-13-41 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 加到voss里 2 date 2019-04-18
+2019-04-23-13-41 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 加到voss里 3 date 2019-04-17
+2019-04-23-13-41 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 加到voss里 4 date 2019-04-16
+2019-04-23-13-42 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 加到voss里 1 date 2019-04-19
+2019-04-23-13-42 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 加到voss里 2 date 2019-04-18
+2019-04-23-13-42 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 加到voss里 3 date 2019-04-17
+2019-04-23-13-42 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 加到voss里 4 date 2019-04-16
+2019-04-23-13-44 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 几次了？1
+2019-04-23-13-44 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 几次了？2
+2019-04-23-13-44 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 几次了？3
+2019-04-23-13-44 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 几次了？4
+2019-04-23-13-44 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 几次了？5
+2019-04-23-13-44 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 几次了？6
+2019-04-23-13-44 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 几次了？7
+2019-04-23-13-44 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 几次了？8
+2019-04-23-13-44 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 几次了？9
+2019-04-23-13-44 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 几次了？10
+2019-04-23-13-44 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 几次了？11
+2019-04-23-13-44 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 几次了？12
+2019-04-23-13-44 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 几次了？13
+2019-04-23-13-44 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 几次了？14
+2019-04-23-13-44 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 几次了？15
+2019-04-23-13-44 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 几次了？16
+2019-04-23-13-44 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 几次了？17
+2019-04-23-13-44 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 几次了？18
+2019-04-23-13-44 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 几次了？19
+2019-04-23-13-47 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 几次了？1
+2019-04-23-13-47 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 几次了？2
+2019-04-23-13-47 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 几次了？3
+2019-04-23-13-47 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 几次了？4
+2019-04-23-13-47 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 几次了？5
+2019-04-23-13-47 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 几次了？6
+2019-04-23-13-47 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 几次了？7
+2019-04-23-13-47 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 几次了？8
+2019-04-23-13-47 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 几次了？9
+2019-04-23-13-47 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 几次了？10
+2019-04-23-13-47 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 几次了？11
+2019-04-23-13-47 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 几次了？12
+2019-04-23-13-47 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 几次了？13
+2019-04-23-13-47 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 几次了？14
+2019-04-23-13-47 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 几次了？15
+2019-04-23-13-47 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 几次了？16
+2019-04-23-13-47 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 几次了？17
+2019-04-23-13-47 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 几次了？18
+2019-04-23-13-47 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 几次了？19
+2019-04-23-13-47 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 我倒要看看你加了几个进去 : 1
+2019-04-23-13-47 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 我倒要看看你加了几个进去 : 2
+2019-04-23-13-47 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 我倒要看看你加了几个进去 : 3
+2019-04-23-13-47 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 我倒要看看你加了几个进去 : 4
+2019-04-23-13-47 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 我倒要看看你加了几个进去 : 5
+2019-04-23-13-47 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 我倒要看看你加了几个进去 : 6
+2019-04-23-13-47 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 我倒要看看你加了几个进去 : 7
+2019-04-23-13-47 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 我倒要看看你加了几个进去 : 8
+2019-04-23-13-47 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 我倒要看看你加了几个进去 : 9
+2019-04-23-13-47 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 我倒要看看你加了几个进去 : 10
+2019-04-23-13-47 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 我倒要看看你加了几个进去 : 11
+2019-04-23-13-47 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 我倒要看看你加了几个进去 : 12
+2019-04-23-13-47 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 我倒要看看你加了几个进去 : 13
+2019-04-23-13-47 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 我倒要看看你加了几个进去 : 14
+2019-04-23-13-47 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 我倒要看看你加了几个进去 : 15
+2019-04-23-13-47 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 我倒要看看你加了几个进去 : 16
+2019-04-23-13-47 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 我倒要看看你加了几个进去 : 17
+2019-04-23-13-47 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 我倒要看看你加了几个进去 : 18
+2019-04-23-13-47 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.HomeController] [ERROR] - 我倒要看看你加了几个进去 : 19
+2019-04-23-14-41 [http-nio-8080-exec-1] [org.thymeleaf.TemplateEngine] [ERROR] - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "home": Exception evaluating SpringEL expression: "vo.get('user'.id)" (home:51)
+2019-04-23-16-12 [http-nio-8080-exec-5] [com.liuyi.toutiao.controller.LoginController] [ERROR] - 注册异常
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'x' for key 'name'
+### The error may involve com.liuyi.toutiao.dao.UserDAO.addUser-Inline
+### The error occurred while setting parameters
+### SQL: insert into user ( name, password, salt, head_url ) values (?, ?, ?, ?)
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'x' for key 'name'
+; SQL []; Duplicate entry 'x' for key 'name'; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'x' for key 'name'
+2019-04-23-16-13 [http-nio-8080-exec-10] [org.thymeleaf.TemplateEngine] [ERROR] - [THYMELEAF][http-nio-8080-exec-10] Exception processing template "home": Exception evaluating SpringEL expression: "vo.get('user').id" (home:47)
+2019-04-23-16-14 [http-nio-8080-exec-9] [com.liuyi.toutiao.controller.LoginController] [ERROR] - 注册异常
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'x' for key 'name'
+### The error may involve com.liuyi.toutiao.dao.UserDAO.addUser-Inline
+### The error occurred while setting parameters
+### SQL: insert into user ( name, password, salt, head_url ) values (?, ?, ?, ?)
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'x' for key 'name'
+; SQL []; Duplicate entry 'x' for key 'name'; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'x' for key 'name'
+2019-04-23-16-43 [http-nio-8080-exec-1] [org.thymeleaf.TemplateEngine] [ERROR] - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "home": Could not parse as expression: "/" (header:34)
+2019-04-23-17-54 [http-nio-8080-exec-1] [org.thymeleaf.TemplateEngine] [ERROR] - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "home": Exception evaluating SpringEL expression: "vo.get('user').id" (home:47)
+2019-04-23-17-55 [http-nio-8080-exec-3] [org.thymeleaf.TemplateEngine] [ERROR] - [THYMELEAF][http-nio-8080-exec-3] Exception processing template "home": Exception evaluating SpringEL expression: "vo.get('user').id" (home:47)
+2019-04-23-17-56 [http-nio-8080-exec-1] [org.thymeleaf.TemplateEngine] [ERROR] - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "home": Exception evaluating SpringEL expression: "vo.get('user').id" (home:47)
+2019-04-23-17-57 [http-nio-8080-exec-1] [org.thymeleaf.TemplateEngine] [ERROR] - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "home": Exception evaluating SpringEL expression: "vo.get('user').headUrl" (home:47)

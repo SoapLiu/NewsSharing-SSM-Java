@@ -1,0 +1,19 @@
+2019-04-26-16-49 [http-nio-8080-exec-4] [org.thymeleaf.TemplateEngine] [ERROR] - [THYMELEAF][http-nio-8080-exec-4] Exception processing template "home": Could not parse as expression: "${user}.name" (header:48)
+2019-04-26-18-14 [http-nio-8080-exec-1] [com.liuyi.toutiao.Interceptor.PassportInterceptor] [ERROR] - 不会走到这儿
+2019-04-26-18-14 [http-nio-8080-exec-1] [com.liuyi.toutiao.Interceptor.PassportInterceptor] [ERROR] - 不会走到这儿
+2019-04-26-18-14 [http-nio-8080-exec-1] [org.thymeleaf.TemplateEngine] [ERROR] - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "home": Could not parse as expression: "${user}.name" (header:43)
+2019-04-26-18-14 [http-nio-8080-exec-1] [com.liuyi.toutiao.Interceptor.PassportInterceptor] [ERROR] - 不会走到这儿
+2019-04-26-18-15 [http-nio-8080-exec-1] [com.liuyi.toutiao.Interceptor.PassportInterceptor] [ERROR] - 不会走到这儿
+2019-04-26-18-15 [http-nio-8080-exec-1] [com.liuyi.toutiao.Interceptor.PassportInterceptor] [ERROR] - 不会走到这儿
+2019-04-26-18-15 [http-nio-8080-exec-1] [org.thymeleaf.TemplateEngine] [ERROR] - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "home": Could not parse as expression: "${user}.name" (header:43)
+2019-04-26-18-15 [http-nio-8080-exec-1] [com.liuyi.toutiao.Interceptor.PassportInterceptor] [ERROR] - 不会走到这儿
+2019-04-26-18-34 [http-nio-8080-exec-1] [org.thymeleaf.TemplateEngine] [ERROR] - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "home": Could not parse as expression: "@{'/user/' + ${user.id}" (header:43)
+2019-04-26-18-37 [http-nio-8080-exec-1] [org.thymeleaf.TemplateEngine] [ERROR] - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "home": Could not parse as expression: "" (header:41)
+2019-04-26-18-38 [http-nio-8080-exec-1] [org.thymeleaf.TemplateEngine] [ERROR] - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "home": Could not parse as expression: "/" (header:41)
+2019-04-26-18-41 [http-nio-8080-exec-9] [org.thymeleaf.TemplateEngine] [ERROR] - [THYMELEAF][http-nio-8080-exec-9] Exception processing template "{"code":1,"msgpwd":"密码错误"}": Error resolving template "{"code":1,"msgpwd":"密码错误"}", template might not exist or might not be accessible by any of the configured Template Resolvers
+2019-04-26-18-41 [http-nio-8080-exec-7] [org.thymeleaf.TemplateEngine] [ERROR] - [THYMELEAF][http-nio-8080-exec-7] Exception processing template "/": Error resolving template "/", template might not exist or might not be accessible by any of the configured Template Resolvers
+2019-04-26-18-41 [http-nio-8080-exec-6] [org.thymeleaf.TemplateEngine] [ERROR] - [THYMELEAF][http-nio-8080-exec-6] Exception processing template "/": Error resolving template "/", template might not exist or might not be accessible by any of the configured Template Resolvers
+2019-04-26-18-42 [http-nio-8080-exec-1] [org.thymeleaf.TemplateEngine] [ERROR] - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "/": Error resolving template "/", template might not exist or might not be accessible by any of the configured Template Resolvers
+2019-04-26-18-46 [http-nio-8080-exec-5] [org.thymeleaf.TemplateEngine] [ERROR] - [THYMELEAF][http-nio-8080-exec-5] Exception processing template "/": Error resolving template "/", template might not exist or might not be accessible by any of the configured Template Resolvers
+2019-04-26-18-46 [http-nio-8080-exec-1] [org.thymeleaf.TemplateEngine] [ERROR] - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "/": Error resolving template "/", template might not exist or might not be accessible by any of the configured Template Resolvers
+2019-04-26-18-46 [http-nio-8080-exec-4] [org.thymeleaf.TemplateEngine] [ERROR] - [THYMELEAF][http-nio-8080-exec-4] Exception processing template "/": Error resolving template "/", template might not exist or might not be accessible by any of the configured Template Resolvers

@@ -1,0 +1,15 @@
+2019-06-23-16-48 [restartedMain] [org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter] [ERROR] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 80 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 80, or configure this application to listen on another port.
+
+2019-06-23-17-03 [http-nio-8080-exec-2] [org.thymeleaf.TemplateEngine] [ERROR] - [THYMELEAF][http-nio-8080-exec-2] Exception processing template "{"code":1,"msgpwd":"密码错误"}": Error resolving template "{"code":1,"msgpwd":"密码错误"}", template might not exist or might not be accessible by any of the configured Template Resolvers

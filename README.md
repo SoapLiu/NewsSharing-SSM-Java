@@ -118,7 +118,7 @@ __项目结构__
 │   │           └── letterDetail.html
 │   └── test
 │       ├── Resources
-│       │   └── init-schema.sql							//初始化项目数据库
+│       │   └── init-schema.txt							//初始化项目数据库
 │       └── java
 │           └── com
 │               └── liuyi

@@ -1,0 +1,33 @@
+2019-06-24-10-47 [http-nio-8080-exec-4] [com.liuyi.toutiao.controller.LoginController] [ERROR] - 上传图片失败/UploadImages/ad66269b2bf34c0b82048401144440bb.jpg
+2019-06-24-10-48 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.LoginController] [ERROR] - 上传图片失败/UploadImages/9b740b636505481fb241c5e266706370.jpg
+2019-06-24-10-58 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.LoginController] [ERROR] - 上传图片失败/UploadImages/e6c5fb3e120e4ecfb37f740c085e8993.jpg
+2019-06-24-10-58 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.LoginController] [ERROR] - 上传图片失败/UploadImages/79f7281531a4453983ed672aebfaaf37.jpg
+2019-06-24-10-58 [http-nio-8080-exec-2] [com.liuyi.toutiao.controller.LoginController] [ERROR] - 上传图片失败/UploadImages/418edfbd2d29451595ebd784f2a6dc86.jpg
+2019-06-24-10-59 [http-nio-8080-exec-3] [com.liuyi.toutiao.controller.LoginController] [ERROR] - 上传图片失败/UploadImages/7ebefdaf314d4b888335e1831ca69fd9.jpg
+2019-06-24-10-59 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.LoginController] [ERROR] - 上传图片失败/UploadImages/08793652b03c48aba923a7be7aa178d5.jpg
+2019-06-24-11-02 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.LoginController] [ERROR] - 上传图片失败/UploadImages/ab9cd9c32a524e5fb37d57d3c2c49413.jpg
+2019-06-24-15-27 [http-nio-8080-exec-2] [com.liuyi.toutiao.controller.LoginController] [ERROR] - 上传图片失败/UploadImages/b499bdd103b24aa59064cf9e46ed4e91.jpg
+2019-06-24-15-33 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.LoginController] [ERROR] - 上传图片失败/UploadImages/745125d9b6204a429f97eb2a0b7e104d.jpg
+2019-06-24-15-33 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.LoginController] [ERROR] - 上传图片失败UploadImages/0aa30363ff66490bb5bc220a3d7460d0.jpg
+2019-06-24-15-35 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.LoginController] [ERROR] - 上传图片失败/UploadImages/afafab48cb1244e3b7505bf96a69770c.jpg
+2019-06-24-15-55 [http-nio-8080-exec-2] [com.liuyi.toutiao.controller.LoginController] [ERROR] - 读取图片错误UploadImages9b6c9aeff82f4e6790728a75f7d79c1c.jpg (No such file or directory)
+2019-06-24-15-55 [http-nio-8080-exec-3] [com.liuyi.toutiao.controller.LoginController] [ERROR] - 读取图片错误UploadImages9b6c9aeff82f4e6790728a75f7d79c1c.jpg (No such file or directory)
+2019-06-24-15-55 [http-nio-8080-exec-5] [com.liuyi.toutiao.controller.LoginController] [ERROR] - 读取图片错误UploadImages9b6c9aeff82f4e6790728a75f7d79c1c.jpeg (No such file or directory)
+2019-06-24-15-55 [http-nio-8080-exec-7] [com.liuyi.toutiao.controller.LoginController] [ERROR] - 读取图片错误UploadImages9b6c9aeff82f4e6790728a75f7d79c1c.jpeg (No such file or directory)
+2019-06-24-15-56 [http-nio-8080-exec-1] [com.liuyi.toutiao.controller.LoginController] [ERROR] - 读取图片错误UploadImages9b6c9aeff82f4e6790728a75f7d79c1c.jpeg (No such file or directory)
+2019-06-24-15-56 [http-nio-8080-exec-3] [com.liuyi.toutiao.controller.LoginController] [ERROR] - 读取图片错误UploadImages9b6c9aeff82f4e6790728a75f7d79c1c.jpg (No such file or directory)
+2019-06-24-16-00 [http-nio-8080-exec-6] [com.liuyi.toutiao.controller.LoginController] [ERROR] - 读取图片错误UploadImages9b6c9aeff82f4e6790728a75f7d79c1c.jpg (No such file or directory)
+2019-06-24-22-51 [restartedMain] [org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter] [ERROR] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 80 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 80, or configure this application to listen on another port.
+

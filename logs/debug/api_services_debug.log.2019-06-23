@@ -1,0 +1,99 @@
+2019-06-23-16-48 [restartedMain] [com.liuyi.toutiao.ToutiaoApplication] [INFO] - Starting ToutiaoApplication on localhost with PID 1815 (/Users/soap/Desktop/toutiao/target/classes started by soap in /Users/soap/Desktop/toutiao)
+2019-06-23-16-48 [restartedMain] [com.liuyi.toutiao.ToutiaoApplication] [INFO] - No active profile set, falling back to default profiles: default
+2019-06-23-16-48 [background-preinit] [org.hibernate.validator.internal.util.Version] [INFO] - HV000001: Hibernate Validator 5.3.6.Final
+2019-06-23-16-48 [restartedMain] [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext] [INFO] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2d2bd0f6: startup date [Sun Jun 23 16:48:11 CST 2019]; root of context hierarchy
+2019-06-23-16-48 [restartedMain] [org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer] [INFO] - Tomcat initialized with port(s): 80 (http)
+2019-06-23-16-48 [localhost-startStop-1] [org.springframework.web.context.ContextLoader] [INFO] - Root WebApplicationContext: initialization completed in 2308 ms
+2019-06-23-16-48 [localhost-startStop-1] [org.springframework.boot.web.servlet.ServletRegistrationBean] [INFO] - Mapping servlet: 'dispatcherServlet' to [/]
+2019-06-23-16-48 [localhost-startStop-1] [org.springframework.boot.web.servlet.FilterRegistrationBean] [INFO] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-06-23-16-48 [localhost-startStop-1] [org.springframework.boot.web.servlet.FilterRegistrationBean] [INFO] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-06-23-16-48 [localhost-startStop-1] [org.springframework.boot.web.servlet.FilterRegistrationBean] [INFO] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-06-23-16-48 [localhost-startStop-1] [org.springframework.boot.web.servlet.FilterRegistrationBean] [INFO] - Mapping filter: 'requestContextFilter' to: [/*]
+2019-06-23-16-48 [restartedMain] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] [INFO] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2d2bd0f6: startup date [Sun Jun 23 16:48:11 CST 2019]; root of context hierarchy
+2019-06-23-16-48 [restartedMain] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] [INFO] - Mapped "{[/ || /home],methods=[GET || POST]}" onto public java.lang.String com.liuyi.toutiao.controller.HomeController.index(org.springframework.ui.Model,int)
+2019-06-23-16-48 [restartedMain] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] [INFO] - Mapped "{[/user/{userId}],methods=[GET || POST]}" onto public java.lang.String com.liuyi.toutiao.controller.HomeController.userIndex(org.springframework.ui.Model,int)
+2019-06-23-16-48 [restartedMain] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] [INFO] - Mapped "{[/register/],methods=[GET || POST]}" onto public java.lang.String com.liuyi.toutiao.controller.LoginController.register(org.springframework.ui.Model,java.lang.String,java.lang.String,int)
+2019-06-23-16-48 [restartedMain] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] [INFO] - Mapped "{[/login/],methods=[GET || POST]}" onto public java.lang.String com.liuyi.toutiao.controller.LoginController.login(org.springframework.ui.Model,java.lang.String,java.lang.String,int,javax.servlet.http.HttpServletResponse)
+2019-06-23-16-48 [restartedMain] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] [INFO] - Mapped "{[/logout],methods=[GET]}" onto public java.lang.String com.liuyi.toutiao.controller.LoginController.logout(java.lang.String)
+2019-06-23-16-48 [restartedMain] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] [INFO] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-06-23-16-48 [restartedMain] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] [INFO] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-06-23-16-48 [restartedMain] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] [INFO] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-23-16-48 [restartedMain] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] [INFO] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-23-16-48 [restartedMain] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] [INFO] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-23-16-48 [restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [INFO] - LiveReload server is running on port 35729
+2019-06-23-16-48 [restartedMain] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] [INFO] - Registering beans for JMX exposure on startup
+2019-06-23-16-48 [restartedMain] [org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer] [INFO] - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2019-06-23-16-48 [restartedMain] [org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter] [ERROR] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 80 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 80, or configure this application to listen on another port.
+
+2019-06-23-16-48 [restartedMain] [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext] [INFO] - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2d2bd0f6: startup date [Sun Jun 23 16:48:11 CST 2019]; root of context hierarchy
+2019-06-23-16-48 [restartedMain] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] [INFO] - Unregistering JMX-exposed beans on shutdown
+2019-06-23-16-48 [restartedMain] [com.liuyi.toutiao.ToutiaoApplication] [INFO] - Starting ToutiaoApplication on localhost with PID 1828 (/Users/soap/Desktop/toutiao/target/classes started by soap in /Users/soap/Desktop/toutiao)
+2019-06-23-16-48 [restartedMain] [com.liuyi.toutiao.ToutiaoApplication] [INFO] - No active profile set, falling back to default profiles: default
+2019-06-23-16-48 [background-preinit] [org.hibernate.validator.internal.util.Version] [INFO] - HV000001: Hibernate Validator 5.3.6.Final
+2019-06-23-16-48 [restartedMain] [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext] [INFO] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1cb8ad08: startup date [Sun Jun 23 16:48:33 CST 2019]; root of context hierarchy
+2019-06-23-16-48 [restartedMain] [org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer] [INFO] - Tomcat initialized with port(s): 8080 (http)
+2019-06-23-16-48 [localhost-startStop-1] [org.springframework.web.context.ContextLoader] [INFO] - Root WebApplicationContext: initialization completed in 2069 ms
+2019-06-23-16-48 [localhost-startStop-1] [org.springframework.boot.web.servlet.ServletRegistrationBean] [INFO] - Mapping servlet: 'dispatcherServlet' to [/]
+2019-06-23-16-48 [localhost-startStop-1] [org.springframework.boot.web.servlet.FilterRegistrationBean] [INFO] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-06-23-16-48 [localhost-startStop-1] [org.springframework.boot.web.servlet.FilterRegistrationBean] [INFO] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-06-23-16-48 [localhost-startStop-1] [org.springframework.boot.web.servlet.FilterRegistrationBean] [INFO] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-06-23-16-48 [localhost-startStop-1] [org.springframework.boot.web.servlet.FilterRegistrationBean] [INFO] - Mapping filter: 'requestContextFilter' to: [/*]
+2019-06-23-16-48 [restartedMain] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] [INFO] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1cb8ad08: startup date [Sun Jun 23 16:48:33 CST 2019]; root of context hierarchy
+2019-06-23-16-48 [restartedMain] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] [INFO] - Mapped "{[/ || /home],methods=[GET || POST]}" onto public java.lang.String com.liuyi.toutiao.controller.HomeController.index(org.springframework.ui.Model,int)
+2019-06-23-16-48 [restartedMain] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] [INFO] - Mapped "{[/user/{userId}],methods=[GET || POST]}" onto public java.lang.String com.liuyi.toutiao.controller.HomeController.userIndex(org.springframework.ui.Model,int)
+2019-06-23-16-48 [restartedMain] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] [INFO] - Mapped "{[/register/],methods=[GET || POST]}" onto public java.lang.String com.liuyi.toutiao.controller.LoginController.register(org.springframework.ui.Model,java.lang.String,java.lang.String,int)
+2019-06-23-16-48 [restartedMain] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] [INFO] - Mapped "{[/login/],methods=[GET || POST]}" onto public java.lang.String com.liuyi.toutiao.controller.LoginController.login(org.springframework.ui.Model,java.lang.String,java.lang.String,int,javax.servlet.http.HttpServletResponse)
+2019-06-23-16-48 [restartedMain] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] [INFO] - Mapped "{[/logout],methods=[GET]}" onto public java.lang.String com.liuyi.toutiao.controller.LoginController.logout(java.lang.String)
+2019-06-23-16-48 [restartedMain] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] [INFO] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-06-23-16-48 [restartedMain] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] [INFO] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-06-23-16-48 [restartedMain] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] [INFO] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-23-16-48 [restartedMain] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] [INFO] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-23-16-48 [restartedMain] [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] [INFO] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-23-16-48 [restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [INFO] - LiveReload server is running on port 35729
+2019-06-23-16-48 [restartedMain] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] [INFO] - Registering beans for JMX exposure on startup
+2019-06-23-16-48 [restartedMain] [org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer] [INFO] - Tomcat started on port(s): 8080 (http)
+2019-06-23-16-48 [restartedMain] [com.liuyi.toutiao.ToutiaoApplication] [INFO] - Started ToutiaoApplication in 4.118 seconds (JVM running for 5.192)
+2019-06-23-16-48 [http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [INFO] - FrameworkServlet 'dispatcherServlet': initialization started
+2019-06-23-16-48 [http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [INFO] - FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2019-06-23-16-48 [http-nio-8080-exec-1] [org.thymeleaf.TemplateEngine] [INFO] - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2019-06-23-16-48 [http-nio-8080-exec-1] [org.thymeleaf.templateresolver.AbstractTemplateResolver] [INFO] - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2019-06-23-16-48 [http-nio-8080-exec-1] [org.thymeleaf.templateresolver.AbstractTemplateResolver] [INFO] - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2019-06-23-16-48 [http-nio-8080-exec-1] [org.thymeleaf.messageresolver.AbstractMessageResolver] [INFO] - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2019-06-23-16-48 [http-nio-8080-exec-1] [org.thymeleaf.messageresolver.AbstractMessageResolver] [INFO] - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2019-06-23-16-48 [http-nio-8080-exec-1] [org.thymeleaf.TemplateEngine.CONFIG] [INFO] - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * XML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2019-06-23-16-48 [http-nio-8080-exec-1] [org.thymeleaf.TemplateEngine] [INFO] - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2019-06-23-17-02 [http-nio-8080-exec-7] [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver] [WARN] - Resolved exception caused by handler execution: org.springframework.web.bind.ServletRequestBindingException: Missing cookie 'ticket' for method parameter of type String
+2019-06-23-17-03 [http-nio-8080-exec-2] [org.thymeleaf.TemplateEngine] [ERROR] - [THYMELEAF][http-nio-8080-exec-2] Exception processing template "{"code":1,"msgpwd":"密码错误"}": Error resolving template "{"code":1,"msgpwd":"密码错误"}", template might not exist or might not be accessible by any of the configured Template Resolvers
+2019-06-23-17-55 [Thread-17] [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext] [INFO] - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1cb8ad08: startup date [Sun Jun 23 16:48:33 CST 2019]; root of context hierarchy
+2019-06-23-17-55 [Thread-17] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] [INFO] - Unregistering JMX-exposed beans on shutdown

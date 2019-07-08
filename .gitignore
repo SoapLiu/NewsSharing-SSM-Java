@@ -1,7 +1,5 @@
 HELP.md
 /target/
-/logs/
-/UploadImages/
 .mvn
 !.mvn/wrapper/maven-wrapper.jar
 mvnw
