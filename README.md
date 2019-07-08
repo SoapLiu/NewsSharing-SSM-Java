@@ -36,8 +36,8 @@ __项目结构__
 ```
 ├── HELP.md
 ├── README.md
-├── UploadImages	//上传图片保存位置
-├── logs	//日志位置
+├── UploadImages								//上传图片保存位置
+├── logs									//日志位置
 │   ├── debug
 │   └── error
 ├── pom.xml
@@ -47,12 +47,12 @@ __项目结构__
 │   │   │   └── com
 │   │   │       └── liuyi
 │   │   │           └── toutiao
-│   │   │               ├── Interceptor
-│   │   │               │   ├── LoginRequiredInterceptor.java
-│   │   │               │   └── PassportInterceptor.java
-│   │   │               ├── ToutiaoApplication.java
-│   │   │               ├── async
-│   │   │               │   ├── EventConsumer.java
+│   │   │               ├── Interceptor							
+│   │   │               │   ├── LoginRequiredInterceptor.java			//验证用户是否登录
+│   │   │               │   └── PassportInterceptor.java			//登录
+│   │   │               ├── ToutiaoApplication.java
+│   │   │               ├── async						//使用Redis实现异步队列处理事件
+│   │   │               │   ├── EventConsumer.java
 │   │   │               │   ├── EventHandler.java
 │   │   │               │   ├── EventModel.java
 │   │   │               │   ├── EventProducer.java
@@ -61,15 +61,15 @@ __项目结构__
 │   │   │               │       ├── LikeHandler.java
 │   │   │               │       └── LoginExceptionHandler.java
 │   │   │               ├── configuration
-│   │   │               │   └── ToutiaoWebConfiguration.java
-│   │   │               ├── controller
+│   │   │               │   └── ToutiaoWebConfiguration.java			//拦截器配置
+│   │   │               ├── controller
 │   │   │               │   ├── CommentController.java
 │   │   │               │   ├── HomeController.java
 │   │   │               │   ├── LikeController.java
 │   │   │               │   ├── LoginController.java
 │   │   │               │   ├── MessageController.java
 │   │   │               │   └── NewsController.java
-│   │   │               ├── dao
+│   │   │               ├── dao							//MyBatis注解型mapper
 │   │   │               │   ├── CommentDAO.java
 │   │   │               │   ├── LoginTicketDAO.java
 │   │   │               │   ├── MessageDAO.java
@@ -96,21 +96,21 @@ __项目结构__
 │   │   │                   ├── RedisKeyUtil.java
 │   │   │                   └── ToutiaoUtil.java
 │   │   └── resources
-│   │       ├── application.properties
-│   │       ├── com
+│   │       ├── application.properties						//项目配置文件(数据库、thymeleaf)
+│   │       ├── com	
 │   │       │   └── liuyi
 │   │       │       └── toutiao
 │   │       │           └── dao
-│   │       │               └── NewsDAO.xml
-│   │       ├── log4j.properties
-│   │       ├── mybatis-config.xml
-│   │       ├── static
+│   │       │               └── NewsDAO.xml					//MyBatis xml型mapper
+│   │       ├── log4j.properties						//日志配置文件
+│   │       ├── mybatis-config.xml						//mybatis配置文件
+│   │       ├── static
 │   │       │   ├── fonts
 │   │       │   ├── images
 │   │       │   ├── scripts
 │   │       │   └── styles
-│   │       └── templates
-│   │           ├── detail.html
+│   │       └── templates							//前端html界面
+│   │           ├── detail.html
 │   │           ├── footer.html
 │   │           ├── header.html
 │   │           ├── home.html
@@ -118,19 +118,27 @@ __项目结构__
 │   │           └── letterDetail.html
 │   └── test
 │       ├── Resources
-│       │   └── init-schema.sql
-│       └── java
+│       │   └── init-schema.sql							//初始化项目数据库
+│       └── java
 │           └── com
 │               └── liuyi
 │                   └── toutiao
 │                       ├── InitDatabaseTest.java
 │                       └── ToutiaoApplicationTests.java
-├── target
 └── toutiao.iml
 
 ```
+
 ### 必要条件
 ------
-
+  *安装JRE，MySQL，Redis*
+  *Java(TM) SE Runtime Environment (build 1.8.0_131-b11)*  
+  *Mysql Server version: 5.7.19 MySQL Community Server (GPL)*  
+  *Redis version=5.0.1*  
+  
 ### 用法
 ------
+	1.安装必要条件中提到的运行环境；
+	2.将application.properties中的username与password更改为自己MySQL数据库的账号密码；
+	3.运行/test/Resource/init-schema完成数据库初始化；
+	4.运行ToutiaoApplication。
