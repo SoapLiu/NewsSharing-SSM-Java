@@ -20,17 +20,17 @@
 ### 项目介绍
 ------
 __项目来源__  
-  该项目基于牛客网中级课程头条咨询网站，由于Spring Boot新版已不支持velocity，故前端模板引擎采用thymeleaf。
+  *该项目基于牛客网中级课程头条咨询网站，由于Spring Boot新版已不支持velocity，故前端模板引擎采用thymeleaf。*
 	
 __开发环境__  
-  macOS Mojave 10.14.5  
-  IntelliJ IDEA Version 2018.2.3  
-  Java(TM) SE Runtime Environment (build 1.8.0_131-b11)  
-  Mysql Server version: 5.7.19 MySQL Community Server (GPL)  
-  Redis version=5.0.1  
+  *macOS Mojave 10.14.5*  
+  *IntelliJ IDEA Version 2018.2.3*  
+  *Java(TM) SE Runtime Environment (build 1.8.0_131-b11)*  
+  *Mysql Server version: 5.7.19 MySQL Community Server (GPL)*  
+  *Redis version=5.0.1*  
 	
 __使用技术栈__  
-  Spring + Spring MVC + Spring Boot + Thymeleaf + MyBatis + MySQL + Redis  
+  *Spring + Spring MVC + Spring Boot + Thymeleaf + MyBatis + MySQL + Redis*  
 
 __项目结构__
 ```
