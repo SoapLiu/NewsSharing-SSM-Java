@@ -1,5 +1,6 @@
 # MockToutiao
 
+![GitHub](https://img.shields.io/github/license/SoapLiu/NewsSharing-SSM-Java.svg)
 ****
 	
 |Author|Yi Liu|
@@ -8,7 +9,6 @@
 
 
 ****
-![GitHub](https://img.shields.io/github/license/SoapLiu/NewsSharing-SSM-Java.svg)
 ## 目录
 * [项目介绍](#项目介绍)
     * 项目来源
